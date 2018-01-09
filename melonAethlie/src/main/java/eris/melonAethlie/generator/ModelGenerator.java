@@ -36,7 +36,7 @@ public class ModelGenerator {
 		families.forEach(f -> familyIndex.put(f.getName(), f));
 		plants.forEach(p -> familyIndex.get(p.getFamily()).getPlants().add(p));
 		OWLOntologyManager owlManager = OWLManager.createOWLOntologyManager();
-		owlManager.addIRIMapper(new AutoIRIMapper(new File("eris"), true));
+//		owlManager.addIRIMapper(new AutoIRIMapper(new File("eris"), true));
 		OWLOntology owlOntology = owlManager.createOntology(IRI.create("http://www.eris.org/melonAethlie"));
 		OWLDataFactory owlFactory = owlManager.getOWLDataFactory();
 		PrefixManager owlPrefixManager = new DefaultPrefixManager("http://www.eris.org/melonAethlie#"); 
@@ -45,14 +45,14 @@ public class ModelGenerator {
 		for (Family family : families) {
 			OWLClass owlFamilyClass = owlFactory.getOWLClass(":" +family.getName(), owlPrefixManager);
 			owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlFamilyClass));
-			owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlPlantClass, owlFamilyClass));
+			owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlFamilyClass, owlPlantClass));
 			for (Plant genus : family.getPlants()) {
 				OWLClass owlGenusClass = owlFactory.getOWLClass(":" + genus.getName(), owlPrefixManager);
 				owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlGenusClass));
-				owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlFamilyClass, owlGenusClass));
+				owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlGenusClass, owlFamilyClass));
 			}
 		}
-		owlManager.saveOntology(owlOntology, new FileOutputStream("eris"));
+		owlManager.saveOntology(owlOntology, new FileOutputStream("eris.owl"));
 		
 	}
 

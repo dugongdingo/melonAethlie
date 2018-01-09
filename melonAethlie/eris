@@ -1,0 +1,2801 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.eris.org/melonAethlie#"
+     xml:base="http://www.eris.org/melonAethlie"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.eris.org/melonAethlie"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Actinidiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Actinidiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#kiwi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Acéracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Acéracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Erable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Adoxacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Adoxacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Sureau noir"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Agave -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Agave"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aizoaceae -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aizoaceae">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#tétragone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aizoacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aizoacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#tétragone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Amarantacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amarantacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Amarante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Amarante -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amarante"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Amélanchier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amélanchier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Anacardiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Anacardiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Anacardier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Anacardier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Anacardier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Annonacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Annonacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asiminier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cherimolier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Taro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Arbousier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arbousier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Argousier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Argousier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Arroche -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arroche"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Arécacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arécacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Palmier à sucre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Asiminier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Asiminier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Asparagacee -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Asparagacee">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#asperge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Asteracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Asteracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Tanaisie"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Achillée millefeuille"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poire de terre,yacon"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oeillet d Inde"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Astéracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Astéracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Bardane"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#salsifis"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#soucis/ calendula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Bardane -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bardane"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Basélacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Basélacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ulluco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Berberidacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Berberidacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Mahonia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Betulacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Betulacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#bouleau"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#noisetier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aulne glutineux"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aulne de corse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Borignacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Borignacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Huître potagère"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Brassicacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Brassicacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Raifort"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#cresson de jardin"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#cresson des fontaines"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#radis noir"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Camphrier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Camphrier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cannabacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cannabacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#houblon"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#micocoulier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Caroubier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Caroubier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cassisier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cassisier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ceanothus -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ceanothus"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Chalef -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chalef"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Chenopodiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chenopodiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Arroche"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Epinard fraise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cherimolier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cherimolier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Chätaigner -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chätaigner"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Chénopodiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chénopodiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Bette maritime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Chéopodiacées -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chéopodiacées">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#betteraves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Citronnier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Citronnier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Convolvulaceae -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Convolvulaceae">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#épinard d’eau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Convolvulacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Convolvulacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Patate douce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cormier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cormier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cotonnier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cotonnier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Crassulacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Crassulacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Nombril de Vénus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cucurbitacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cucurbitacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chayotte, christophine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cyperacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cyperacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#châtaigne d’eau chinoise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cypéracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cypéracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#souchet comestible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cédratier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cédratier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Dioscoracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Dioscoracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Igname de chine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ebenacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ebenacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plaqueminier,kaki"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Eleagnacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Eleagnacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Argousier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chalef"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Goumi du Japon"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Olivier de Bohème"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Shepherdia argenté"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Erable -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Erable"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ericacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ericacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Arbousier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Airelle rouge"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Gaultheria shallon"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myrtille géante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Fabacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fabacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Caroubier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fevier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fève"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Genêt"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Glycine"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#lentille"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Arbre de pluie"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Faux indigo"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Glycine tubéreuse"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Robinier faux acacia"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Vigne japonaise,kudzu"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#arachide,cacahuète"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#caraganier/pois de sibérie"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#pois chiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Fagacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fagacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chätaigner"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#hêtre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Feijoa -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Feijoa"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Fevier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fevier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Fève -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fève"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Genêt -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Genêt"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ginkgoacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ginkgoacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ginko Biloba"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Glycine -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Glycine"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Grenadier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Grenadier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Grossuliaracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Grossuliaracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cassisier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Hémérocalle -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Hémérocalle"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Juglandacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Juglandacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Noyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Kumquat -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Kumquat"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Lamiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lamiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lavande"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Monarde"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Romarin"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#sauge"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#thym"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Lardizabalacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lardizabalacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#akebia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Lauracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lauracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Camphrier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Lavande -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lavande"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Liliacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Liliacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Hosta de fortune"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Oignon patate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Lotus -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lotus"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Mahonia -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Mahonia"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Malvacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Malvacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cotonnier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Miscanthus -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Miscanthus"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Monarde -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Monarde"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Moracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Moracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Mûrier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#figuier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Myricacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myricacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Comptonie voyageuse"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myrte des Marais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Myrtacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myrtacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Feijoa"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myrteola"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Goyave du Chili"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Myrteola -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myrteola"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Mûrier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Mûrier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Nashi -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Nashi"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Noyer -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Noyer"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Nélumbonacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Nélumbonacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lotus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Olivier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Olivier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Oléacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Oléacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Olivier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#frêne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ortie -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ortie"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Oxalidacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Oxalidacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Oca du Pérou"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Passifloracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Passifloracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Passiflore/fruit de la passion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Paulowniacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Paulowniacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Paulownia imperial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Physalis -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Physalis"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Pinacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Pinacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Pin de Corée"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Plant -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Plant">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Actinidiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Acéracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Adoxacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aizoaceae"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aizoacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Amarantacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Anacardiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Annonacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Arécacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asparagacee"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Astéracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Basélacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Berberidacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Betulacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Borignacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cannabacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chenopodiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chénopodiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chéopodiacées"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Convolvulaceae"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Convolvulacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Crassulacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cucurbitacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cyperacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cypéracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Dioscoracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ebenacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Eleagnacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ericacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fagacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ginkgoacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Grossuliaracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Juglandacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lamiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lardizabalacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lauracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Malvacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Moracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myricacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myrtacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Nélumbonacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Oléacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Oxalidacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Passifloracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Paulowniacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Pinacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plantiginacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ramnacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rhamnacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rubiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rutacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Salicacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Sapindacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Schisandracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Tiliacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Tropaeolaceae"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ulmacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Valérianacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Vitacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Xanthorrhoéacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#agavacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#apiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#asteracée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#boraginacées"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#borignacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#brassicacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#campanulacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chenopodiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chénopodiacées"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#cucurbitacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#fabacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#grossulariacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#liliacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#linacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#montiacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#null"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#polygonacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#pédialacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#rosacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#solanacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#valérianacée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Urtica dioïca"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Plantiginacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Plantiginacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#plantain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Poacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Poacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Miscanthus"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#bambou"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Canne à sucre"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Roseau commun"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#riz sauvage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Poncirier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Poncirier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Prunier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Prunier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Raifort -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Raifort"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ramnacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ramnacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ceanothus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Rhamnacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rhamnacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#jujubier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Romarin -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Romarin"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Rosacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rosacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Amélanchier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cormier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Nashi"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Prunier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#abricotier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#amelanchier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#cerisier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#framboise"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poirier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#pommier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aronia à fruit noirs"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aubépine fruitière"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Bibacier,néflier du Japon"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cerisier tomenteux"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosier rugueux/du japon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Rubiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rubiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Gaillet odorant/aspersule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Rutacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rutacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Citronnier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cédratier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Kumquat"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poncirier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Main de bouddha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Salicacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Salicacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#saule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Sapindacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Sapindacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#litchi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Schisandra -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Schisandra"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Schisandracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Schisandracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Schisandra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Solanacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Solanacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Physalis"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Tamarillo, tomate en arbre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Tanaisie -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tanaisie"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Taro -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Taro"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Tiliacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tiliacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Tilleul"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Tilleul -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tilleul"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Tropaeolaceae -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tropaeolaceae">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#capucine tubereuse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ulluco -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ulluco"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ulmacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ulmacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#orme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Valérianacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Valérianacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#mâche perpetuelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Vigne -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Vigne"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Vitacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Vitacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Vigne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Xanthorrhoéacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Xanthorrhoéacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lin de nouvelle zélande"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#abricotier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#abricotier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#agavacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#agavacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Agave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#ail -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#ail"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#akebia -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#akebia"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#amelanchier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#amelanchier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#apiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#apiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#céleris-raves"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#fenouils"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#panais"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#persil"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#carottes ete"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#carottes hiver"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#carottes printemps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#artichaut -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#artichaut"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#asperge -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#asperge"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#asteracée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#asteracée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#artichaut"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#cardons"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#scorsonères"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#topinambour"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#tournesol"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chenopode de bon henri"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chicorées frisées et scaroles"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chicorées witloof endives"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#céleris à couper"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#céleris à côtes"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#laitues d automne"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#laitues d hiver"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#laitues d été"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#laitues de printemps"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#laitues à couper"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#laitues à forcer"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poire de terre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#aubergines -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#aubergines"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#avoine -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#avoine"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#bambou -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#bambou"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#betteraves -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#betteraves"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#ble -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#ble"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#boraginacées -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#boraginacées">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#bourrache"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#borignacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#borignacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#consoude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#bouleau -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#bouleau"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#bourrache -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#bourrache"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#brassicacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#brassicacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#choux-fleurs"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#moutarde"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#brocoli nine star"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chou daubenton"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chou kale"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#chou-fleurs d hiver"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#choux brocolis"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#choux d été d automne et d hiver cabus de milan"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#choux de bruxelles"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#choux de printemps cabus"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#crambe maritime"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#navets d automne"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#navets de printemps"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#radis raves"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#radis d hiver"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#radis d été et d automne"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#radis de tous les mois"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#campanulacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#campanulacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#raiponce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#cardons -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#cardons"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#cerisier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#cerisier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chenopodiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chenopodiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#quinoa"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#liane de madere"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poirées blettes bettes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#choux-fleurs -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#choux-fleurs"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chénopodiacées -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chénopodiacées">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#épinards hiver"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#épinards été"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#consoude -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#consoude"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#courgettes -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#courgettes"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#cucurbitacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#cucurbitacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#courgettes"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#melons"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#potirons"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#concombres cornichons"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#courge butternut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#céleris-raves -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#céleris-raves"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#epeautre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#epeautre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#fabacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#fabacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#lupin"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#luzerne"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#fèves printemps"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#fèves été"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#haricots nains à filets mangetout"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#haricots à rames à filets mangetout"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#haricots à écosser récolte en grains frais"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#haricots à écosser récolte en grains secs"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#pois à grain ridé et mangetout"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#pois à grain rond et mangetout"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#pois à grain rond ou ridé précoces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#fenouils -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#fenouils"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#figuier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#figuier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#fraisier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#fraisier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#framboise -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#framboise"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#frêne -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#frêne"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#groseiller -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#groseiller"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#grossulariacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#grossulariacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#groseiller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#houblon -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#houblon"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#hêtre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#hêtre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#jujubier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#jujubier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#kiwi -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#kiwi"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#lentille -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#lentille"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#liliacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#liliacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#ail"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#ail des ours"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#ciboule de chine"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oignons blancs"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oignons rocambole"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oignons blancs à confire"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oignons de couleur automne"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oignons de couleur printemps"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poireau perpetuel"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poireaux d été"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poireaux d automne et d hiver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#lin -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#lin"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#linacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#linacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#lin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#litchi -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#litchi"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#lupin -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#lupin"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#luzerne -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#luzerne"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#maïs -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#maïs"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#melons -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#melons"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#micocoulier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#micocoulier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#millet -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#millet"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#montiacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#montiacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#claytone de cuba"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#moutarde -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#moutarde"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#mâches -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#mâches"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#noisetier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#noisetier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#null -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#null">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Grenadier"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Hémérocalle"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#null"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aralie à grappe"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Camerisier/baie de mai"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Gaulthérie couchée"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Gingembre sauvage"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#baie aux 5 saveurs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#orge -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#orge"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#orme -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#orme"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oseilles -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oseilles"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#panais -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#panais"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#persil -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#persil"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#plantain -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#plantain"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#avoine"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#ble"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#epeautre"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#maïs"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#millet"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#orge"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#seigle"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#sorgho"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#ble dur"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#ble tendre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poirier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poirier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poivron -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poivron"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#polygonacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#polygonacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oseilles"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#sarrasin"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#oseille epinard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#pommier -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#pommier"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#potirons -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#potirons"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#pédialacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#pédialacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#sesame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#quinoa -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#quinoa"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#raiponce -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#raiponce"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#rosacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#rosacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#fraisier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#salsifis -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#salsifis"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#sarrasin -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#sarrasin"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#sauge -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#sauge"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#saule -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#saule"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#scorsonères -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#scorsonères"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#seigle -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#seigle"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#sesame -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#sesame"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#solanacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#solanacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#aubergines"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#poivron"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#tomate"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#pomme de terre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#sorgho -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#sorgho"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#thym -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#thym"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#tomate -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#tomate"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#topinambour -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#topinambour"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#tournesol -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#tournesol"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#tétragone -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#tétragone"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#valérianacée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#valérianacée">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#mâches"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Achillée millefeuille -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Achillée millefeuille"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Airelle rouge -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Airelle rouge"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aralie à grappe -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aralie à grappe"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Arbre de pluie -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arbre de pluie"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aronia à fruit noirs -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aronia à fruit noirs"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aubépine fruitière -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aubépine fruitière"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aulne glutineux -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aulne glutineux"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Aulne de corse -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aulne de corse"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Bette maritime -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bette maritime"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Bibacier,néflier du Japon -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bibacier,néflier du Japon"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Camerisier/baie de mai -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Camerisier/baie de mai"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Canne à sucre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Canne à sucre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Cerisier tomenteux -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cerisier tomenteux"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Comptonie voyageuse -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Comptonie voyageuse"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Epinard fraise -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Epinard fraise"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Faux indigo -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Faux indigo"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Gaillet odorant/aspersule -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Gaillet odorant/aspersule"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Gaultheria shallon -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Gaultheria shallon"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Gaulthérie couchée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Gaulthérie couchée"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Gingembre sauvage -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Gingembre sauvage"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Ginko Biloba -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ginko Biloba"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Glycine tubéreuse -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Glycine tubéreuse"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Goumi du Japon -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Goumi du Japon"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Goyave du Chili -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Goyave du Chili"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Hosta de fortune -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Hosta de fortune"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Huître potagère -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Huître potagère"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Igname de chine -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Igname de chine"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Lin de nouvelle zélande -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lin de nouvelle zélande"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Main de bouddha -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Main de bouddha"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Myrte des Marais -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myrte des Marais"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Myrtille géante -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myrtille géante"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Nombril de Vénus -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Nombril de Vénus"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Oca du Pérou -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Oca du Pérou"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Oignon patate -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Oignon patate"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Olivier de Bohème -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Olivier de Bohème"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Palmier à sucre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Palmier à sucre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Passiflore/fruit de la passion -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Passiflore/fruit de la passion"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Patate douce -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Patate douce"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Paulownia imperial -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Paulownia imperial"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Pin de Corée -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Pin de Corée"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Plaqueminier,kaki -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Plaqueminier,kaki"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Poire de terre,yacon -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Poire de terre,yacon"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Robinier faux acacia -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Robinier faux acacia"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Roseau commun -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Roseau commun"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Rosier rugueux/du japon -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rosier rugueux/du japon"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Shepherdia argenté -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Shepherdia argenté"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Sureau noir -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Sureau noir"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Tamarillo, tomate en arbre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tamarillo, tomate en arbre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Urtica dioïca -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Urtica dioïca">
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ortie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#Vigne japonaise,kudzu -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#Vigne japonaise,kudzu"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#ail des ours -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#ail des ours"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#arachide,cacahuète -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#arachide,cacahuète"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#baie aux 5 saveurs -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#baie aux 5 saveurs"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#ble dur -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#ble dur"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#ble tendre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#ble tendre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#brocoli nine star -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#brocoli nine star"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#capucine tubereuse -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#capucine tubereuse"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#caraganier/pois de sibérie -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#caraganier/pois de sibérie"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#carottes ete -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#carottes ete"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#carottes hiver -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#carottes hiver"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#carottes printemps -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#carottes printemps"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chayotte, christophine -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chayotte, christophine"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chenopode de bon henri -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chenopode de bon henri"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chicorées frisées et scaroles -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chicorées frisées et scaroles"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chicorées witloof endives -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chicorées witloof endives"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chou daubenton -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chou daubenton"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chou kale -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chou kale"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#chou-fleurs d hiver -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#chou-fleurs d hiver"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#choux brocolis -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#choux brocolis"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#choux d été d automne et d hiver cabus de milan -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#choux d été d automne et d hiver cabus de milan"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#choux de bruxelles -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#choux de bruxelles"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#choux de printemps cabus -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#choux de printemps cabus"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#châtaigne d’eau chinoise -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#châtaigne d’eau chinoise"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#ciboule de chine -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#ciboule de chine"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#claytone de cuba -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#claytone de cuba"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#concombres cornichons -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#concombres cornichons"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#courge butternut -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#courge butternut"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#crambe maritime -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#crambe maritime"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#cresson de jardin -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#cresson de jardin"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#cresson des fontaines -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#cresson des fontaines"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#céleris à couper -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#céleris à couper"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#céleris à côtes -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#céleris à côtes"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#fèves printemps -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#fèves printemps"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#fèves été -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#fèves été"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#haricots nains à filets mangetout -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#haricots nains à filets mangetout"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#haricots à rames à filets mangetout -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#haricots à rames à filets mangetout"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#haricots à écosser récolte en grains frais -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#haricots à écosser récolte en grains frais"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#haricots à écosser récolte en grains secs -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#haricots à écosser récolte en grains secs"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#laitues d automne -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#laitues d automne"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#laitues d hiver -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#laitues d hiver"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#laitues d été -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#laitues d été"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#laitues de printemps -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#laitues de printemps"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#laitues à couper -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#laitues à couper"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#laitues à forcer -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#laitues à forcer"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#liane de madere -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#liane de madere"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#mâche perpetuelle -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#mâche perpetuelle"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#navets d automne -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#navets d automne"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#navets de printemps -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#navets de printemps"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oeillet d Inde -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oeillet d Inde"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oignons blancs -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oignons blancs"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oignons rocambole -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oignons rocambole"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oignons blancs à confire -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oignons blancs à confire"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oignons de couleur automne -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oignons de couleur automne"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oignons de couleur printemps -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oignons de couleur printemps"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#oseille epinard -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#oseille epinard"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poire de terre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poire de terre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poireau perpetuel -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poireau perpetuel"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poireaux d été -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poireaux d été"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poireaux d automne et d hiver -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poireaux d automne et d hiver"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#poirées blettes bettes -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#poirées blettes bettes"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#pois chiche -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#pois chiche"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#pois à grain ridé et mangetout -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#pois à grain ridé et mangetout"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#pois à grain rond et mangetout -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#pois à grain rond et mangetout"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#pois à grain rond ou ridé précoces -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#pois à grain rond ou ridé précoces"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#pomme de terre -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#pomme de terre"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#radis noir -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#radis noir"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#radis raves -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#radis raves"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#radis d hiver -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#radis d hiver"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#radis d été et d automne -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#radis d été et d automne"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#radis de tous les mois -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#radis de tous les mois"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#riz sauvage -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#riz sauvage"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#souchet comestible -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#souchet comestible"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#soucis/ calendula -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#soucis/ calendula"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#épinard d’eau -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#épinard d’eau"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#épinards hiver -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#épinards hiver"/>
+    
+
+
+    <!-- http://www.eris.org/melonAethlie#épinards été -->
+
+
+    <owl:Class rdf:about="http://www.eris.org/melonAethlie#épinards été"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.4.2018-01-04T07:01:37Z) https://github.com/owlcs/owlapi/ -->
+
+
