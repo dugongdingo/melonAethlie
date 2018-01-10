@@ -59,16 +59,16 @@ public class Plant {
 	public void setPerennial(PerennialType perennial) {
 		this.perennial = perennial;
 	}
-	public int getWidth() {
+	public Integer getWidth() {
 		return width;
 	}
-	public void setWidth(int width) {
+	public void setWidth(Integer width) {
 		this.width = width;
 	}
-	public int getHeight() {
+	public Integer getHeight() {
 		return height;
 	}
-	public void setHeight(int height) {
+	public void setHeight(Integer height) {
 		this.height = height;
 	}
 	public SunshineNeeded getSunshineNeeded() {
@@ -95,16 +95,16 @@ public class Plant {
 	public void setBeneficialNeighbors(Set<String> beneficialNeighbors) {
 		this.beneficialNeighbors = beneficialNeighbors;
 	}
-	public int getLineSpacing() {
+	public Integer getLineSpacing() {
 		return lineSpacing;
 	}
-	public void setLineSpacing(int lineSpacing) {
+	public void setLineSpacing(Integer lineSpacing) {
 		this.lineSpacing = lineSpacing;
 	}
-	public int getRowSpacing() {
+	public Integer getRowSpacing() {
 		return rowSpacing;
 	}
-	public void setRowSpacing(int rowSpacing) {
+	public void setRowSpacing(Integer rowSpacing) {
 		this.rowSpacing = rowSpacing;
 	}
 	public NutrientsNeeded getNutrientsNeeded() {
@@ -119,22 +119,22 @@ public class Plant {
 	public void setPhNeeded(PHNeeded phNeeded) {
 		this.phNeeded = phNeeded;
 	}
-	public int getTimeToSprout() {
+	public Integer getTimeToSprout() {
 		return timeToSprout;
 	}
-	public void setTimeToSprout(int timeToSprout) {
+	public void setTimeToSprout(Integer timeToSprout) {
 		this.timeToSprout = timeToSprout;
 	}
-	public int getTemperatureToSprout() {
+	public Integer getTemperatureToSprout() {
 		return temperatureToSprout;
 	}
-	public void setTemperatureToSprout(int temperatureToSprout) {
+	public void setTemperatureToSprout(Integer temperatureToSprout) {
 		this.temperatureToSprout = temperatureToSprout;
 	}
-	public int getExpectedYield() {
+	public Integer getExpectedYield() {
 		return expectedYield;
 	}
-	public void setExpectedYield(int expectedYield) {
+	public void setExpectedYield(Integer expectedYield) {
 		this.expectedYield = expectedYield;
 	}
 	public Set<String> getUses() {
@@ -149,10 +149,10 @@ public class Plant {
 	public void setMedicalUses(Set<String> medicalUses) {
 		this.medicalUses = medicalUses;
 	}
-	public int getMinimalTemperature() {
+	public Integer getMinimalTemperature() {
 		return minimalTemperature;
 	}
-	public void setMinimalTemperature(int minimalTemperature) {
+	public void setMinimalTemperature(Integer minimalTemperature) {
 		this.minimalTemperature = minimalTemperature;
 	}
 	public RootType getRootType() {
@@ -161,16 +161,16 @@ public class Plant {
 	public void setRootType(RootType rootType) {
 		this.rootType = rootType;
 	}
-	public int getDepth() {
+	public Integer getDepth() {
 		return depth;
 	}
-	public void setDepth(int depth) {
+	public void setDepth(Integer depth) {
 		this.depth = depth;
 	}
-	public int getSeedConservationDuration() {
+	public Integer getSeedConservationDuration() {
 		return seedConservationDuration;
 	}
-	public void setSeedConservationDuration(int seedConservationDuration) {
+	public void setSeedConservationDuration(Integer seedConservationDuration) {
 		this.seedConservationDuration = seedConservationDuration;
 	}
 
@@ -194,24 +194,24 @@ public class Plant {
 	private Set<MultiplicationType> multiplications;
 	private GroundType ground;
 	private PerennialType perennial;
-	private int width;
-	private int height;
+	private Integer width;
+	private Integer height;
 	private SunshineNeeded sunshineNeeded;
 	private String comments;
 	private Set<String> nefariousNeighbors;
 	private Set<String> beneficialNeighbors;
-	private int lineSpacing;
-	private int rowSpacing;
+	private Integer lineSpacing;
+	private Integer rowSpacing;
 	private NutrientsNeeded nutrientsNeeded;
 	private PHNeeded phNeeded;
-	private int timeToSprout;
-	private int temperatureToSprout;
-	private int expectedYield;
+	private Integer timeToSprout;
+	private Integer temperatureToSprout;
+	private Integer expectedYield;
 	private Set<String> uses;
 	private Set<String> medicalUses;
-	private int minimalTemperature;
+	private Integer minimalTemperature;
 	private RootType rootType;
-	private int depth;
-	private int seedConservationDuration;
+	private Integer depth;
+	private Integer seedConservationDuration;
 	
 }
