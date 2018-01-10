@@ -1,6 +1,6 @@
 package eris.melonAethlie.enums;
 
-public enum Months {
+public enum Month {
 	JAN,
 	FEB,
 	MAR,

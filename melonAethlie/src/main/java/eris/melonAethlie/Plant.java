@@ -7,7 +7,7 @@ import java.util.Set;
 import eris.melonAethlie.enums.Action;
 import eris.melonAethlie.enums.EdiblePart;
 import eris.melonAethlie.enums.GroundType;
-import eris.melonAethlie.enums.Months;
+import eris.melonAethlie.enums.Month;
 import eris.melonAethlie.enums.MultiplicationType;
 import eris.melonAethlie.enums.NutrientsNeeded;
 import eris.melonAethlie.enums.PHNeeded;
@@ -17,10 +17,10 @@ import eris.melonAethlie.enums.SunshineNeeded;
 
 public class Plant {
 
-	public EnumMap<Months, List<Action>> getCalendar() {
+	public EnumMap<Action, List<Month>> getCalendar() {
 		return calendar;
 	}
-	public void setCalendar(EnumMap<Months, List<Action>> calendar) {
+	public void setCalendar(EnumMap<Action, List<Month>> calendar) {
 		this.calendar = calendar;
 	}
 	public String getName() {
@@ -189,7 +189,7 @@ public class Plant {
 
 	private String name;
 	private String family;
-	private EnumMap<Months, List<Action>> calendar;
+	private EnumMap<Action, List<Month>> calendar;
 	private Set<EdiblePart> edibleParts;
 	private Set<MultiplicationType> multiplications;
 	private GroundType ground;
