@@ -5,58 +5,67 @@ import java.util.List;
 import java.util.Set;
 
 import eris.melonAethlie.enums.Action;
-import eris.melonAethlie.enums.EdiblePart;
-import eris.melonAethlie.enums.GroundType;
-import eris.melonAethlie.enums.Month;
-import eris.melonAethlie.enums.MultiplicationType;
-import eris.melonAethlie.enums.NutrientsNeeded;
-import eris.melonAethlie.enums.PHNeeded;
-import eris.melonAethlie.enums.PerennialType;
-import eris.melonAethlie.enums.RootType;
-import eris.melonAethlie.enums.SunshineNeeded;
+import eris.melonAethlie.enums.PartieComestible;
+import eris.melonAethlie.enums.TypeDeSol;
+import eris.melonAethlie.enums.Mois;
+import eris.melonAethlie.enums.Multiplication;
+import eris.melonAethlie.enums.BesoinsEnNutriments;
+import eris.melonAethlie.enums.BesoinsEnPH;
+import eris.melonAethlie.enums.CaractereVivace;
+import eris.melonAethlie.enums.TypeDeRacine;
+import eris.melonAethlie.enums.BesoinEnSoleil;
+import eris.melonAethlie.generator.ModelGenerator;
 
 public class Plant {
+	
+	public String getPrefLabel() {
+		return null;
+	}
+	
+	public String getAltLabel() {
+		return null;
+	}
 
-	public EnumMap<Action, List<Month>> getCalendar() {
+	public EnumMap<Action, List<Mois>> getCalendar() {
 		return calendar;
 	}
-	public void setCalendar(EnumMap<Action, List<Month>> calendar) {
+	public void setCalendar(EnumMap<Action, List<Mois>> calendar) {
 		this.calendar = calendar;
 	}
 	public String getName() {
-		return name;
+		return ModelGenerator.capitalize(name);
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
 	public String getFamily() {
-		return family;
+		return family == null ? "Autre": family;
 	}
 	public void setFamily(String family) {
 		this.family = family;
 	}
-	public Set<EdiblePart> getEdibleParts() {
+	public Set<PartieComestible> getEdibleParts() {
 		return edibleParts;
 	}
-	public void setEdibleParts(Set<EdiblePart> edibleParts) {
+	public void setEdibleParts(Set<PartieComestible> edibleParts) {
 		this.edibleParts = edibleParts;
 	}
-	public Set<MultiplicationType> getMultiplications() {
+	public Set<Multiplication> getMultiplications() {
 		return multiplications;
 	}
-	public void setMultiplications(Set<MultiplicationType> multiplications) {
+	public void setMultiplications(Set<Multiplication> multiplications) {
 		this.multiplications = multiplications;
 	}
-	public GroundType getGround() {
+	public TypeDeSol getGround() {
 		return ground;
 	}
-	public void setGround(GroundType ground) {
+	public void setGround(TypeDeSol ground) {
 		this.ground = ground;
 	}
-	public PerennialType getPerennial() {
+	public CaractereVivace getPerennial() {
 		return perennial;
 	}
-	public void setPerennial(PerennialType perennial) {
+	public void setPerennial(CaractereVivace perennial) {
 		this.perennial = perennial;
 	}
 	public Integer getWidth() {
@@ -71,10 +80,10 @@ public class Plant {
 	public void setHeight(Integer height) {
 		this.height = height;
 	}
-	public SunshineNeeded getSunshineNeeded() {
+	public BesoinEnSoleil getSunshineNeeded() {
 		return sunshineNeeded;
 	}
-	public void setSunshineNeeded(SunshineNeeded sunshineNeeded) {
+	public void setSunshineNeeded(BesoinEnSoleil sunshineNeeded) {
 		this.sunshineNeeded = sunshineNeeded;
 	}
 	public String getComments() {
@@ -107,16 +116,16 @@ public class Plant {
 	public void setRowSpacing(Integer rowSpacing) {
 		this.rowSpacing = rowSpacing;
 	}
-	public NutrientsNeeded getNutrientsNeeded() {
+	public BesoinsEnNutriments getNutrientsNeeded() {
 		return nutrientsNeeded;
 	}
-	public void setNutrientsNeeded(NutrientsNeeded nutrientsNeeded) {
+	public void setNutrientsNeeded(BesoinsEnNutriments nutrientsNeeded) {
 		this.nutrientsNeeded = nutrientsNeeded;
 	}
-	public PHNeeded getPhNeeded() {
+	public BesoinsEnPH getPhNeeded() {
 		return phNeeded;
 	}
-	public void setPhNeeded(PHNeeded phNeeded) {
+	public void setPhNeeded(BesoinsEnPH phNeeded) {
 		this.phNeeded = phNeeded;
 	}
 	public Integer getTimeToSprout() {
@@ -155,10 +164,10 @@ public class Plant {
 	public void setMinimalTemperature(Integer minimalTemperature) {
 		this.minimalTemperature = minimalTemperature;
 	}
-	public RootType getRootType() {
+	public TypeDeRacine getRootType() {
 		return rootType;
 	}
-	public void setRootType(RootType rootType) {
+	public void setRootType(TypeDeRacine rootType) {
 		this.rootType = rootType;
 	}
 	public Integer getDepth() {
@@ -189,28 +198,28 @@ public class Plant {
 
 	private String name;
 	private String family;
-	private EnumMap<Action, List<Month>> calendar;
-	private Set<EdiblePart> edibleParts;
-	private Set<MultiplicationType> multiplications;
-	private GroundType ground;
-	private PerennialType perennial;
+	private EnumMap<Action, List<Mois>> calendar;
+	private Set<PartieComestible> edibleParts;
+	private Set<Multiplication> multiplications;
+	private TypeDeSol ground;
+	private CaractereVivace perennial;
 	private Integer width;
 	private Integer height;
-	private SunshineNeeded sunshineNeeded;
+	private BesoinEnSoleil sunshineNeeded;
 	private String comments;
 	private Set<String> nefariousNeighbors;
 	private Set<String> beneficialNeighbors;
 	private Integer lineSpacing;
 	private Integer rowSpacing;
-	private NutrientsNeeded nutrientsNeeded;
-	private PHNeeded phNeeded;
+	private BesoinsEnNutriments nutrientsNeeded;
+	private BesoinsEnPH phNeeded;
 	private Integer timeToSprout;
 	private Integer temperatureToSprout;
 	private Integer expectedYield;
 	private Set<String> uses;
 	private Set<String> medicalUses;
 	private Integer minimalTemperature;
-	private RootType rootType;
+	private TypeDeRacine rootType;
 	private Integer depth;
 	private Integer seedConservationDuration;
 	

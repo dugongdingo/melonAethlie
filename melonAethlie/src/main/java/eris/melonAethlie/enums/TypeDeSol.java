@@ -1,26 +1,26 @@
 package eris.melonAethlie.enums;
 
-public enum GroundType {
+public enum TypeDeSol {
 	/*title="Sol argileux/lourd"
 			title="Sol équilibré"
 			title="Sol plante aquatique"
 			title="Sol sableux/léger"
 */
-	HEAVY,
-	MID,
-	LIGHT,
-	WATER;
+	ArgileuxLourd,
+	Equilibre,
+	SableuxLeger,
+	PlanteAquatique;
 	
-	public static GroundType fromFrenchLabel(final String label) {
+	public static TypeDeSol fromFrenchLabel(final String label) {
 		switch (label) {
 		case "argileux/lourd" :
-			return HEAVY;
+			return ArgileuxLourd;
 		case "équilibré" :
-			return MID;
+			return Equilibre;
 		case "sableux/léger" :
-			return LIGHT;
+			return SableuxLeger;
 		case "plante aquatique" :
-			return WATER;
+			return PlanteAquatique;
 		}
 		return null;
 	}

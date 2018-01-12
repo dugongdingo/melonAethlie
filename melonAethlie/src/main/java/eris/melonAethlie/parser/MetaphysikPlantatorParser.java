@@ -14,7 +14,7 @@ import javax.xml.stream.XMLStreamReader;
 import eris.melonAethlie.Plant;
 import eris.melonAethlie.enums.Action;
 import eris.melonAethlie.enums.DivType;
-import eris.melonAethlie.enums.Month;
+import eris.melonAethlie.enums.Mois;
 
 public class MetaphysikPlantatorParser {
 	
@@ -58,7 +58,7 @@ public class MetaphysikPlantatorParser {
 	}
 
 	private void readCalendar(final XMLStreamReader xsr, final Plant plant) throws XMLStreamException {
-		plant.setCalendar(new EnumMap<Action, List<Month>>(Action.class));
+		plant.setCalendar(new EnumMap<Action, List<Mois>>(Action.class));
 		int i = -1;
 		while (xsr.hasNext()) {
 			switch(xsr.next()) {
@@ -73,12 +73,12 @@ public class MetaphysikPlantatorParser {
 							Action action = xsr.getAttributeValue(j).equals("semisext") ? Action.SOW : xsr.getAttributeValue(j).equals("recolte") ? Action.HARVEST : null;
 							if (action != null) key = action;
 						}
-					List<Month> months = plant.getCalendar().get(key);
+					List<Mois> months = plant.getCalendar().get(key);
 					if (months == null) {
 						months = new ArrayList<>();
 						plant.getCalendar().put(key, months);
 					}
-					months.add(Month.values()[i]);
+					months.add(Mois.values()[i]);
 				}
 				break;
 			case XMLStreamConstants.CHARACTERS :

@@ -33,18 +33,34 @@ import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import eris.melonAethlie.Family;
 import eris.melonAethlie.Plant;
 import eris.melonAethlie.enums.Action;
-import eris.melonAethlie.enums.EdiblePart;
-import eris.melonAethlie.enums.GroundType;
-import eris.melonAethlie.enums.Month;
-import eris.melonAethlie.enums.MultiplicationType;
-import eris.melonAethlie.enums.NutrientsNeeded;
-import eris.melonAethlie.enums.PHNeeded;
-import eris.melonAethlie.enums.PerennialType;
-import eris.melonAethlie.enums.RootType;
-import eris.melonAethlie.enums.SunshineNeeded;
+import eris.melonAethlie.enums.PartieComestible;
+import eris.melonAethlie.enums.TypeDeSol;
+import eris.melonAethlie.enums.Mois;
+import eris.melonAethlie.enums.Multiplication;
+import eris.melonAethlie.enums.BesoinsEnNutriments;
+import eris.melonAethlie.enums.BesoinsEnPH;
+import eris.melonAethlie.enums.CaractereVivace;
+import eris.melonAethlie.enums.TypeDeRacine;
+import eris.melonAethlie.enums.BesoinEnSoleil;
 import eris.melonAethlie.parser.MetaphysikPlantatorParser;
 
 public class ModelGenerator {
+	
+	public static String capitalize(String toCaps) {
+		if (toCaps == null) return null;
+		toCaps = toCaps.toLowerCase();
+		String acc = "";
+		for (String word : toCaps.split(" ")) {
+			word = word.substring(0, 1).toUpperCase() + word.substring(1);
+			acc += word;
+		}
+		return acc;
+	}
+	
+	public static String lowerCaseFirst(String toLower) {
+		if (toLower == null) return null;
+		return toLower.substring(0,1).toLowerCase() + toLower.substring(1); 
+	}
 	
 	
 	@SuppressWarnings("rawtypes")
@@ -53,6 +69,7 @@ public class ModelGenerator {
 		Set<Family> families = plants.stream().map(p -> readCleanFamilyName(p.getFamily())).collect(Collectors.toSet()).stream().map(f -> new Family(f)).collect(Collectors.toSet());
 		Map<String, Plant> plantIndex = new HashMap<>();
 		plants.forEach(p  -> plantIndex.put(p.getName(), p));
+		plantIndex.remove(null);
 		Map<String, Family> familyIndex = new HashMap<>(); 
 		families.forEach(f -> familyIndex.put(f.getName(), f));
 		plants.forEach(p -> familyIndex.get(readCleanFamilyName(p.getFamily())).getPlants().add(p));
@@ -61,23 +78,21 @@ public class ModelGenerator {
 		OWLDataFactory owlFactory = owlManager.getOWLDataFactory();
 		PrefixManager owlPrefixManager = new DefaultPrefixManager("http://www.eris.org/melonAethlie#"); 
 		OWLDatatype owlInteger = owlFactory.getOWLDatatype(OWL2Datatype.XSD_INTEGER);
-		OWLClass owlPlantClass = owlFactory.getOWLClass(":plant", owlPrefixManager);
+		OWLClass owlPlantClass = owlFactory.getOWLClass(":Plante", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlPlantClass));
-		
 				
-		OWLClass owlMedicalUses = owlFactory.getOWLClass(":" + "MedicinalUse", owlPrefixManager);
+		OWLClass owlMedicalUses = owlFactory.getOWLClass(":" + "UsageMedicinal", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlMedicalUses));
 		
-		OWLObjectProperty hasMedicinalUse = owlFactory.getOWLObjectProperty(":" + "hasMedicinalUse", owlPrefixManager);
+		OWLObjectProperty hasMedicinalUse = owlFactory.getOWLObjectProperty(":" + "aUsageMedicinal", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasMedicinalUse));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasMedicinalUse, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasMedicinalUse, owlMedicalUses));
 		
-		OWLObjectProperty hasUse = owlFactory.getOWLObjectProperty(":" + "hasUse", owlPrefixManager);
+		OWLObjectProperty hasUse = owlFactory.getOWLObjectProperty(":" + "utilite", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasUse));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasUse, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasUse, owlMedicalUses));
-		
 		
 		
 		//specific plant class generation
@@ -97,7 +112,7 @@ public class ModelGenerator {
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlmedicUse, owlMedicalUses));
 						usages.add(owlmedicUse);
 					}
-					OWLObjectProperty owlMedicalUse = owlFactory.getOWLObjectProperty(":" + genus.getName() + "_hasMedicinalUse", owlPrefixManager);
+					OWLObjectProperty owlMedicalUse = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "AUsageMedicinal", owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlMedicalUse));
 					OWLClassExpression range = owlFactory.getOWLObjectUnionOf(usages);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(owlMedicalUse, owlGenusClass));
@@ -112,7 +127,7 @@ public class ModelGenerator {
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlGenusUse, owlMedicalUses));
 						usages.add(owlGenusUse);
 					}
-					OWLObjectProperty owlUse = owlFactory.getOWLObjectProperty(":" + genus.getName() + "_hasUse", owlPrefixManager);
+					OWLObjectProperty owlUse = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "AUtilite", owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlUse));
 					OWLClassExpression range = owlFactory.getOWLObjectUnionOf(usages);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(owlUse, owlGenusClass));
@@ -124,7 +139,7 @@ public class ModelGenerator {
 		}
 		
 		//enums class generation
-		Class[] enums = new Class[] {EdiblePart.class, GroundType.class, Month.class, MultiplicationType.class, NutrientsNeeded.class, PerennialType.class, PHNeeded.class, RootType.class, SunshineNeeded.class}; 
+		Class[] enums = new Class[] {PartieComestible.class, TypeDeSol.class, Mois.class, Multiplication.class, BesoinsEnNutriments.class, CaractereVivace.class, BesoinsEnPH.class, TypeDeRacine.class, BesoinEnSoleil.class}; 
 		for(Class e : enums) {
 			OWLClass owlEnumClass =  owlFactory.getOWLClass(":" + e.getSimpleName(), owlPrefixManager);
 			owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlEnumClass));
@@ -138,115 +153,115 @@ public class ModelGenerator {
 			owlManager.addAxiom(owlOntology, owlFactory.getOWLDisjointClassesAxiom(enumeratedValues.toArray(new OWLClass[] {})));
 		}
 		
-		OWLClass owlMonthClass =  owlFactory.getOWLClass(":" + Month.class.getSimpleName(), owlPrefixManager);
+		OWLClass owlMonthClass =  owlFactory.getOWLClass(":" + Mois.class.getSimpleName(), owlPrefixManager);
 
 		// properties generation
-		OWLObjectProperty isSownIn = owlFactory.getOWLObjectProperty(":isSownIn", owlPrefixManager);
+		OWLObjectProperty isSownIn = owlFactory.getOWLObjectProperty(":estSemeEn", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(isSownIn));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(isSownIn, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(isSownIn, owlMonthClass));
 
-		OWLObjectProperty isHarvestedIn = owlFactory.getOWLObjectProperty(":isHarvestedIn", owlPrefixManager);
+		OWLObjectProperty isHarvestedIn = owlFactory.getOWLObjectProperty(":estRecolteEn", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(isHarvestedIn));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(isHarvestedIn, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(isHarvestedIn, owlMonthClass));
 		
-		OWLObjectProperty hasNefariousNeighbor = owlFactory.getOWLObjectProperty(":" + "hasNefariousNeighbor", owlPrefixManager);
+		OWLObjectProperty hasNefariousNeighbor = owlFactory.getOWLObjectProperty(":" + "aPourMauvaisVoisin", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasNefariousNeighbor));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasNefariousNeighbor, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasNefariousNeighbor, owlPlantClass));
 
-		OWLObjectProperty hasBeneficialNeighbor = owlFactory.getOWLObjectProperty(":" + "hasBeneficialNeighbor", owlPrefixManager);
+		OWLObjectProperty hasBeneficialNeighbor = owlFactory.getOWLObjectProperty(":" + "aPourBonVoisin", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasBeneficialNeighbor));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasBeneficialNeighbor, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasBeneficialNeighbor, owlPlantClass));
 
-		OWLObjectProperty hasEdibleParts = owlFactory.getOWLObjectProperty(":" + "hasEdibleParts", owlPrefixManager);
+		OWLObjectProperty hasEdibleParts = owlFactory.getOWLObjectProperty(":" + "aPourPartieComestible", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasEdibleParts));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasEdibleParts, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasEdibleParts, owlFactory.getOWLClass(":" +  EdiblePart.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasEdibleParts, owlFactory.getOWLClass(":" +  PartieComestible.class.getSimpleName(), owlPrefixManager)));
 		
-		OWLDataProperty hasExpectedYield = owlFactory.getOWLDataProperty(":" + "hasExpectedYield", owlPrefixManager);
+		OWLDataProperty hasExpectedYield = owlFactory.getOWLDataProperty(":" + "aPourRendementAttendu", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasExpectedYield));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasExpectedYield, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasExpectedYield, owlInteger));
 		
-		OWLObjectProperty hasGroundTypeNeeded = owlFactory.getOWLObjectProperty(":" + "hasGround", owlPrefixManager);
+		OWLObjectProperty hasGroundTypeNeeded = owlFactory.getOWLObjectProperty(":" + "aBesoinCommeTypeDeSol", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasGroundTypeNeeded));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasGroundTypeNeeded, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasGroundTypeNeeded, owlFactory.getOWLClass(":" +  GroundType.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasGroundTypeNeeded, owlFactory.getOWLClass(":" +  TypeDeSol.class.getSimpleName(), owlPrefixManager)));
 		
-		OWLDataProperty hasHeight = owlFactory.getOWLDataProperty(":" + "hasHeight", owlPrefixManager);
+		OWLDataProperty hasHeight = owlFactory.getOWLDataProperty(":" + "aPourHauteur", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasHeight));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasHeight, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasHeight, owlInteger));
 		
-		OWLDataProperty hasDepth = owlFactory.getOWLDataProperty(":" + "hasDepth", owlPrefixManager);
+		OWLDataProperty hasDepth = owlFactory.getOWLDataProperty(":" + "aPourProfondeur", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasDepth));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasDepth, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasDepth, owlInteger));
 		
-		OWLDataProperty hasLineSpacing = owlFactory.getOWLDataProperty(":" + "hasLineSpacing", owlPrefixManager);
+		OWLDataProperty hasLineSpacing = owlFactory.getOWLDataProperty(":" + "aPourEspacementDansLaLigne", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasLineSpacing));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasLineSpacing, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasLineSpacing, owlInteger));
 		
-		OWLDataProperty hasMinimalTemperature = owlFactory.getOWLDataProperty(":" + "hasMinimalTemperature", owlPrefixManager);
+		OWLDataProperty hasMinimalTemperature = owlFactory.getOWLDataProperty(":" + "aPourTemperatureMinimale", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasMinimalTemperature));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasMinimalTemperature, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasMinimalTemperature, owlInteger));
 		
-		OWLObjectProperty hasMultiplicationType = owlFactory.getOWLObjectProperty(":" + "hasMultiplicationType", owlPrefixManager);
+		OWLObjectProperty hasMultiplicationType = owlFactory.getOWLObjectProperty(":" + "seMultipliePar", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasMultiplicationType));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasMultiplicationType, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasMultiplicationType, owlFactory.getOWLClass(":" +  MultiplicationType.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasMultiplicationType, owlFactory.getOWLClass(":" +  Multiplication.class.getSimpleName(), owlPrefixManager)));
 		
-		OWLObjectProperty hasNutrientsNeeded = owlFactory.getOWLObjectProperty(":" + "hasNutrientsNeeded", owlPrefixManager);
+		OWLObjectProperty hasNutrientsNeeded = owlFactory.getOWLObjectProperty(":" + "aPourBesoinEnNutriments", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasNutrientsNeeded));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasNutrientsNeeded, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasNutrientsNeeded, owlFactory.getOWLClass(":" +  NutrientsNeeded.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasNutrientsNeeded, owlFactory.getOWLClass(":" +  BesoinsEnNutriments.class.getSimpleName(), owlPrefixManager)));
 		
-		OWLObjectProperty hasPerennialType = owlFactory.getOWLObjectProperty(":" + "hasPerennialType", owlPrefixManager);
+		OWLObjectProperty hasPerennialType = owlFactory.getOWLObjectProperty(":" + "aPourCaractereVivace", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasPerennialType));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasPerennialType, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasPerennialType, owlFactory.getOWLClass(":" +  PerennialType.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasPerennialType, owlFactory.getOWLClass(":" +  CaractereVivace.class.getSimpleName(), owlPrefixManager)));
 		
-		OWLObjectProperty hasPHNeeded = owlFactory.getOWLObjectProperty(":" + "hasPHNeeded", owlPrefixManager);
+		OWLObjectProperty hasPHNeeded = owlFactory.getOWLObjectProperty(":" + "aBesoinCommePH", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasPHNeeded));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasPHNeeded, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasPHNeeded, owlFactory.getOWLClass(":" +  PHNeeded.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasPHNeeded, owlFactory.getOWLClass(":" +  BesoinsEnPH.class.getSimpleName(), owlPrefixManager)));
 		
-		OWLObjectProperty hasRootType = owlFactory.getOWLObjectProperty(":" + "hasRootType", owlPrefixManager);
+		OWLObjectProperty hasRootType = owlFactory.getOWLObjectProperty(":" + "aPourTypeDeRacine", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasRootType));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasRootType, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasRootType, owlFactory.getOWLClass(":" +  RootType.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasRootType, owlFactory.getOWLClass(":" +  TypeDeRacine.class.getSimpleName(), owlPrefixManager)));
 		
-		OWLObjectProperty hasSunshineNeeded = owlFactory.getOWLObjectProperty(":" + "hasSunshineNeeded", owlPrefixManager);
+		OWLObjectProperty hasSunshineNeeded = owlFactory.getOWLObjectProperty(":" + "aPourBesoinEnEnsoleillement", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasSunshineNeeded));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasSunshineNeeded, owlPlantClass));
-		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasSunshineNeeded, owlFactory.getOWLClass(":" +  SunshineNeeded.class.getSimpleName(), owlPrefixManager)));
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasSunshineNeeded, owlFactory.getOWLClass(":" +  BesoinEnSoleil.class.getSimpleName(), owlPrefixManager)));
 
-		OWLDataProperty hasRowSpacing = owlFactory.getOWLDataProperty(":" + "hasRowSpacing", owlPrefixManager);
+		OWLDataProperty hasRowSpacing = owlFactory.getOWLDataProperty(":" + "aPourEspacementDansLeRang", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasRowSpacing));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasRowSpacing, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasRowSpacing, owlInteger));
 
-		OWLDataProperty hasSeedConservationDuration = owlFactory.getOWLDataProperty(":" + "hasSeedConservationDuration", owlPrefixManager);
+		OWLDataProperty hasSeedConservationDuration = owlFactory.getOWLDataProperty(":" + "aPourDureeDeConservationEnTantQueGraine", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasSeedConservationDuration));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasSeedConservationDuration, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasSeedConservationDuration, owlInteger));
 
-		OWLDataProperty hasTemperatureToSprout = owlFactory.getOWLDataProperty(":" + "hasTemperatureToSprout", owlPrefixManager);
+		OWLDataProperty hasTemperatureToSprout = owlFactory.getOWLDataProperty(":" + "aPourTemperatureDeLeveeDesGraines", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasTemperatureToSprout));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasTemperatureToSprout, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasTemperatureToSprout, owlInteger));
 
-		OWLDataProperty hasTimeToSprout = owlFactory.getOWLDataProperty(":" + "hasTimeToSprout", owlPrefixManager);
+		OWLDataProperty hasTimeToSprout = owlFactory.getOWLDataProperty(":" + "aPourTempsDeLeverDesGraines", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasTimeToSprout));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasTimeToSprout, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasTimeToSprout, owlInteger));
 
-		OWLDataProperty hasWidth = owlFactory.getOWLDataProperty(":" + "hasWidth", owlPrefixManager);
+		OWLDataProperty hasWidth = owlFactory.getOWLDataProperty(":" + "aPourLargeur", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasWidth));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(hasWidth, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyRangeAxiom(hasWidth, owlInteger));
@@ -260,7 +275,7 @@ public class ModelGenerator {
 					nefariousNeighbors.remove(null);
 					if (!nefariousNeighbors.isEmpty()) {
 						OWLClassExpression range = owlFactory.getOWLObjectUnionOf(nefariousNeighbors.stream().map(p -> owlFactory.getOWLClass(":" + p.getName(), owlPrefixManager)).collect(Collectors.toSet()));
-						OWLObjectProperty plantHasNefariousNeighbor = owlFactory.getOWLObjectProperty(":" + genus.getName() + "_hasNefariousNeighbor", owlPrefixManager);
+						OWLObjectProperty plantHasNefariousNeighbor = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "APourMauvaisVoisin", owlPrefixManager);
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(plantHasNefariousNeighbor));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(plantHasNefariousNeighbor, owlGenusClass));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(plantHasNefariousNeighbor, range));
@@ -272,7 +287,7 @@ public class ModelGenerator {
 				if (genus.getCalendar() != null)
 					for (Action action : genus.getCalendar().keySet())
 						if (action == Action.HARVEST && genus.getCalendar().get(action) != null && !genus.getCalendar().get(action).isEmpty()) {
-							OWLObjectProperty genusIsHarvestedIn = owlFactory.getOWLObjectProperty(":"+ genus.getName() + "_isSownIn", owlPrefixManager);
+							OWLObjectProperty genusIsHarvestedIn = owlFactory.getOWLObjectProperty(":"+ genus.getName() + "EstRecolteEn", owlPrefixManager);
 							OWLClassExpression range = owlFactory.getOWLObjectUnionOf(genus.getCalendar().get(action).stream().map(m -> owlFactory.getOWLClass(":" + m.toString(), owlPrefixManager)).collect(Collectors.toSet()));
 							owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusIsHarvestedIn));
 							owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusIsHarvestedIn, owlGenusClass));
@@ -280,7 +295,7 @@ public class ModelGenerator {
 							owlManager.addAxiom(owlOntology, owlFactory.getOWLSubObjectPropertyOfAxiom(genusIsHarvestedIn, isHarvestedIn));
 						}
 						else if (action == Action.SOW && genus.getCalendar().get(action) != null  &&!genus.getCalendar().get(action).isEmpty()) {
-							OWLObjectProperty genusIsSownIn = owlFactory.getOWLObjectProperty(":"+ genus.getName() + "_isSownIn", owlPrefixManager);
+							OWLObjectProperty genusIsSownIn = owlFactory.getOWLObjectProperty(":"+ genus.getName() + "EstSemeEn", owlPrefixManager);
 							OWLClassExpression range = owlFactory.getOWLObjectUnionOf(genus.getCalendar().get(action).stream().map(m -> owlFactory.getOWLClass(":" + m.toString(), owlPrefixManager)).collect(Collectors.toSet()));
 							owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusIsSownIn));
 							owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusIsSownIn, owlGenusClass));
@@ -289,7 +304,7 @@ public class ModelGenerator {
 						}
 				
 				if (genus.getDepth() != null) {
-					OWLDataProperty genusHasDepth =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasDepth", owlPrefixManager);
+					OWLDataProperty genusHasDepth =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourProfondeur", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getDepth()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasDepth));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasDepth, owlGenusClass));
@@ -298,7 +313,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getGround() != null) {
-					OWLObjectProperty genusHasGroundType = owlFactory.getOWLObjectProperty(":" + genus.getName() +"_hasGroundTypeNeeded", owlPrefixManager);
+					OWLObjectProperty genusHasGroundType = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) +"ACommeBesoinEnTypeDeSol", owlPrefixManager);
 					OWLClass range =  owlFactory.getOWLClass(":"+genus.getGround().toString(), owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasGroundType));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasGroundType, owlGenusClass));
@@ -307,7 +322,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getSunshineNeeded() != null) {
-					OWLObjectProperty genusHasSunshineNeeded = owlFactory.getOWLObjectProperty(":" + genus.getName() +"_hasSunshineNeeded", owlPrefixManager);
+					OWLObjectProperty genusHasSunshineNeeded = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) +"APourBesoinEnEnsoleillement", owlPrefixManager);
 					OWLClass range =  owlFactory.getOWLClass(":"+genus.getSunshineNeeded().toString(), owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasSunshineNeeded));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasSunshineNeeded, owlGenusClass));
@@ -316,7 +331,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getNutrientsNeeded() != null) {
-					OWLObjectProperty genusHasNutrientsNeeded = owlFactory.getOWLObjectProperty(":" + genus.getName() +"_hasNutrientsNeeded", owlPrefixManager);
+					OWLObjectProperty genusHasNutrientsNeeded = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) +"APourBesoinEnNutriments", owlPrefixManager);
 					OWLClass range =  owlFactory.getOWLClass(":"+genus.getNutrientsNeeded().toString(), owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasNutrientsNeeded));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasNutrientsNeeded, owlGenusClass));
@@ -325,7 +340,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getPerennial() != null) {
-					OWLObjectProperty genusHasPerennialType = owlFactory.getOWLObjectProperty(":" + genus.getName() +"_hasPerennialType", owlPrefixManager);
+					OWLObjectProperty genusHasPerennialType = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) +"APourCaractereVivace", owlPrefixManager);
 					OWLClass range =  owlFactory.getOWLClass(":"+genus.getPerennial().toString(), owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasPerennialType));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasPerennialType, owlGenusClass));
@@ -334,7 +349,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getPhNeeded() != null) {
-					OWLObjectProperty genusHasPHNeeded = owlFactory.getOWLObjectProperty(":" + genus.getName() +"_hasPHNeeded", owlPrefixManager);
+					OWLObjectProperty genusHasPHNeeded = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) +"ABesoinCommePH", owlPrefixManager);
 					OWLClass range =  owlFactory.getOWLClass(":"+genus.getPhNeeded().toString(), owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasPHNeeded));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasPHNeeded, owlGenusClass));
@@ -343,7 +358,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getRootType() != null) {
-					OWLObjectProperty genusHasRootType = owlFactory.getOWLObjectProperty(":" + genus.getName() +"_hasRootType", owlPrefixManager);
+					OWLObjectProperty genusHasRootType = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) +"APourTypeDeRacine", owlPrefixManager);
 					OWLClass range =  owlFactory.getOWLClass(":" + genus.getRootType().toString(), owlPrefixManager);
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasRootType));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasRootType, owlGenusClass));
@@ -355,7 +370,7 @@ public class ModelGenerator {
 					genus.getEdibleParts().remove(null);
 					if (!genus.getEdibleParts().isEmpty()) {
 						OWLClassExpression range = owlFactory.getOWLObjectUnionOf(genus.getEdibleParts().stream().map(ep -> owlFactory.getOWLClass(":" + ep.toString(), owlPrefixManager)).collect(Collectors.toSet()));
-						OWLObjectProperty genusHasEdiblePart = owlFactory.getOWLObjectProperty(":" + genus.getName() + "_hasEdiblePart", owlPrefixManager);
+						OWLObjectProperty genusHasEdiblePart = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "APourPartieComestible", owlPrefixManager);
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasEdiblePart));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasEdiblePart, owlGenusClass));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(genusHasEdiblePart, range));
@@ -367,7 +382,7 @@ public class ModelGenerator {
 					genus.getMultiplications().remove(null);
 					if (!genus.getMultiplications().isEmpty()) {
 						OWLClassExpression range = owlFactory.getOWLObjectUnionOf(genus.getMultiplications().stream().map(ep -> owlFactory.getOWLClass(":" + ep.toString(), owlPrefixManager)).collect(Collectors.toSet()));
-						OWLObjectProperty genusHasEdiblePart = owlFactory.getOWLObjectProperty(":" + genus.getName() + "_hasEdiblePart", owlPrefixManager);
+						OWLObjectProperty genusHasEdiblePart = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "SeMultipliePar", owlPrefixManager);
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasEdiblePart));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(genusHasEdiblePart, owlGenusClass));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(genusHasEdiblePart, range));
@@ -376,7 +391,7 @@ public class ModelGenerator {
 				}
 
 				if (genus.getExpectedYield() != null) {
-					OWLDataProperty genusHasExpectedYield =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasExpectedYield", owlPrefixManager);
+					OWLDataProperty genusHasExpectedYield =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourRendementAttendu", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getExpectedYield()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasExpectedYield));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasExpectedYield, owlGenusClass));
@@ -385,7 +400,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getHeight() != null) {
-					OWLDataProperty genusHasHeight =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasHeight", owlPrefixManager);
+					OWLDataProperty genusHasHeight =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourHauteur", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getHeight()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasHeight));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasHeight, owlGenusClass));
@@ -394,7 +409,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getLineSpacing() != null) {
-					OWLDataProperty genusHasLineSpacing =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasLineSpacing", owlPrefixManager);
+					OWLDataProperty genusHasLineSpacing =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourEspacementDansLaLigne", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getLineSpacing()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasLineSpacing));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasLineSpacing, owlGenusClass));
@@ -403,7 +418,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getMinimalTemperature() != null) {
-					OWLDataProperty genusHasMinimalTemperature =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasMinimalTemperature", owlPrefixManager);
+					OWLDataProperty genusHasMinimalTemperature =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourTemperatureMinimale", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getMinimalTemperature()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasMinimalTemperature));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasMinimalTemperature, owlGenusClass));
@@ -412,7 +427,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getRowSpacing() != null) {
-					OWLDataProperty genusHasRowSpacing =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasRowSpacing", owlPrefixManager);
+					OWLDataProperty genusHasRowSpacing =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourEspacementDansLeRang", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getRowSpacing()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasRowSpacing));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasRowSpacing, owlGenusClass));
@@ -421,7 +436,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getSeedConservationDuration() != null) {
-					OWLDataProperty genusHasSeedConservationDuration =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasSeedConservationDuration", owlPrefixManager);
+					OWLDataProperty genusHasSeedConservationDuration =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourDureeDeConservationEnTantQueGraine", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getSeedConservationDuration()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasSeedConservationDuration));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasSeedConservationDuration, owlGenusClass));
@@ -430,7 +445,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getTemperatureToSprout() != null) {
-					OWLDataProperty genusHasTemperatureToSprout =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasTemperatureToSprout", owlPrefixManager);
+					OWLDataProperty genusHasTemperatureToSprout =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourTemperatureDeLeveeDesGraines", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getTemperatureToSprout()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasTemperatureToSprout));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasTemperatureToSprout, owlGenusClass));
@@ -439,7 +454,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getTimeToSprout() != null) {
-					OWLDataProperty genusHasTimeToSprout =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasTimeToSprout", owlPrefixManager);
+					OWLDataProperty genusHasTimeToSprout =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourTempsDeLeveeDesGraines", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getTimeToSprout()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasTimeToSprout));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasTimeToSprout, owlGenusClass));
@@ -448,7 +463,7 @@ public class ModelGenerator {
 				}
 				
 				if (genus.getWidth() != null) {
-					OWLDataProperty genusHasWidth =  owlFactory.getOWLDataProperty(":" + genus.getName() +"_hasWidth", owlPrefixManager);
+					OWLDataProperty genusHasWidth =  owlFactory.getOWLDataProperty(":" + lowerCaseFirst(genus.getName()) +"APourLargeur", owlPrefixManager);
 					OWLDataRange range = owlFactory.getOWLDataOneOf(owlFactory.getOWLLiteral(genus.getWidth()));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(genusHasWidth));
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLDataPropertyDomainAxiom(genusHasWidth, owlGenusClass));
@@ -461,7 +476,7 @@ public class ModelGenerator {
 					beneficialNeighbors.remove(null);
 					if ( ! beneficialNeighbors.isEmpty()) {
 						OWLClassExpression range = owlFactory.getOWLObjectUnionOf(beneficialNeighbors.stream().map(p -> owlFactory.getOWLClass(":" + p.getName(), owlPrefixManager)).collect(Collectors.toSet()));
-						OWLObjectProperty plantHasBeneficialNeighbor = owlFactory.getOWLObjectProperty(":" + genus.getName() + "_hasBeneficialNeighbor", owlPrefixManager);
+						OWLObjectProperty plantHasBeneficialNeighbor = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "APourBonVoisin", owlPrefixManager);
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(plantHasBeneficialNeighbor));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(plantHasBeneficialNeighbor, owlGenusClass));
 						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(plantHasBeneficialNeighbor, range));
@@ -470,14 +485,13 @@ public class ModelGenerator {
 				}
 			}
 		}
-		
 		owlManager.saveOntology(owlOntology, new FileOutputStream("eris.owl"));
 		
 	}
 
 	public static String readCleanFamilyName(String familyName) {
 		String clean = removeAccents(familyName);
-		if (clean != null) clean = clean.toLowerCase();
+		if (clean != null) clean = capitalize(familyName);
 		if (clean != null  && clean.charAt(clean.length() -1) == 's') clean = clean.substring(0, clean.length() - 1);
 		return clean;
 	}
