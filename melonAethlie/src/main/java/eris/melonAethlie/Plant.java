@@ -19,11 +19,32 @@ import eris.melonAethlie.generator.ModelGenerator;
 public class Plant {
 	
 	public String getPrefLabel() {
+		if (rawName != null) {
+			if (rawName.contains("/")) {
+				return rawName.split("/")[0];
+			}
+			if (rawName.contains(",")) {
+				return rawName.split(",")[0];
+			}
+		}
 		return null;
 	}
 	
 	public String getAltLabel() {
+		if (rawName != null) {
+			if (rawName.contains("/")) {
+				return rawName.split("/")[1];
+			}
+			if (rawName.contains(",")) {
+				return rawName.split(",")[1];
+			}
+		}
 		return null;
+
+	}
+	
+	public String getDefaultAnnotation() {
+		return "classe pour décrire la plante : " + rawName;
 	}
 
 	public EnumMap<Action, List<Mois>> getCalendar() {
@@ -33,10 +54,10 @@ public class Plant {
 		this.calendar = calendar;
 	}
 	public String getName() {
-		return ModelGenerator.capitalize(name);
+		return ModelGenerator.capitalize(rawName);
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.rawName = name;
 	}
 	public String getFamily() {
 		return family == null ? "Autre": family;
@@ -185,7 +206,7 @@ public class Plant {
 
 	@Override
 	public String toString() {
-		return "Plant [name=" + name + ", family=" + family + ", calendar=" + calendar + ", edibleParts=" + edibleParts
+		return "Plant [name=" + rawName + ", family=" + family + ", calendar=" + calendar + ", edibleParts=" + edibleParts
 				+ ", multiplications=" + multiplications + ", ground=" + ground + ", perennial=" + perennial
 				+ ", width=" + width + ", height=" + height + ", sunshineNeeded=" + sunshineNeeded + ", comments="
 				+ comments + ", nefariousNeighbors=" + nefariousNeighbors + ", beneficialNeighbors="
@@ -196,7 +217,7 @@ public class Plant {
 				+ rootType + ", depth=" + depth + ", seedConservationDuration=" + seedConservationDuration + "]";
 	}
 
-	private String name;
+	private String rawName;
 	private String family;
 	private EnumMap<Action, List<Mois>> calendar;
 	private Set<PartieComestible> edibleParts;

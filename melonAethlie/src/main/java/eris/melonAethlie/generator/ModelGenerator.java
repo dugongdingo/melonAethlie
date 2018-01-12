@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 
 import javax.xml.stream.XMLStreamException;
 
+import org.eclipse.rdf4j.model.vocabulary.RDFS;
+import org.eclipse.rdf4j.model.vocabulary.SKOS;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
@@ -33,15 +35,15 @@ import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import eris.melonAethlie.Family;
 import eris.melonAethlie.Plant;
 import eris.melonAethlie.enums.Action;
-import eris.melonAethlie.enums.PartieComestible;
-import eris.melonAethlie.enums.TypeDeSol;
-import eris.melonAethlie.enums.Mois;
-import eris.melonAethlie.enums.Multiplication;
+import eris.melonAethlie.enums.BesoinEnSoleil;
 import eris.melonAethlie.enums.BesoinsEnNutriments;
 import eris.melonAethlie.enums.BesoinsEnPH;
 import eris.melonAethlie.enums.CaractereVivace;
+import eris.melonAethlie.enums.Mois;
+import eris.melonAethlie.enums.Multiplication;
+import eris.melonAethlie.enums.PartieComestible;
 import eris.melonAethlie.enums.TypeDeRacine;
-import eris.melonAethlie.enums.BesoinEnSoleil;
+import eris.melonAethlie.enums.TypeDeSol;
 import eris.melonAethlie.parser.MetaphysikPlantatorParser;
 
 public class ModelGenerator {
@@ -51,10 +53,12 @@ public class ModelGenerator {
 		toCaps = toCaps.toLowerCase();
 		String acc = "";
 		for (String word : toCaps.split(" ")) {
-			word = word.substring(0, 1).toUpperCase() + word.substring(1);
+			word = word.trim();
+			if (word.length() > 1) word = word.substring(0, 1).toUpperCase() + word.substring(1);
+			else if (word.length() == 1) word = word.toUpperCase();
 			acc += word;
 		}
-		return acc;
+		return acc.trim().equals("") ? null : acc.trim();
 	}
 	
 	public static String lowerCaseFirst(String toLower) {
@@ -84,12 +88,15 @@ public class ModelGenerator {
 		OWLClass owlMedicalUses = owlFactory.getOWLClass(":" + "UsageMedicinal", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlMedicalUses));
 		
+		OWLClass owlUses = owlFactory.getOWLClass(":" + "Utilite", owlPrefixManager);
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlMedicalUses));
+		
 		OWLObjectProperty hasMedicinalUse = owlFactory.getOWLObjectProperty(":" + "aUsageMedicinal", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasMedicinalUse));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasMedicinalUse, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasMedicinalUse, owlMedicalUses));
 		
-		OWLObjectProperty hasUse = owlFactory.getOWLObjectProperty(":" + "utilite", owlPrefixManager);
+		OWLObjectProperty hasUse = owlFactory.getOWLObjectProperty(":" + "aUtilite", owlPrefixManager);
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(hasUse));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(hasUse, owlPlantClass));
 		owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(hasUse, owlMedicalUses));
@@ -100,42 +107,66 @@ public class ModelGenerator {
 			OWLClass owlFamilyClass = owlFactory.getOWLClass(":" +family.getName(), owlPrefixManager);
 			owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlFamilyClass));
 			owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlFamilyClass, owlPlantClass));
-			for (Plant genus : family.getPlants()) {
+			plants : for (Plant genus : family.getPlants()) {
+				if (genus.getName() == null) continue plants;
 				OWLClass owlGenusClass = owlFactory.getOWLClass(":" + genus.getName(), owlPrefixManager);
 				owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlGenusClass));
 				owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlGenusClass, owlFamilyClass));
+				if (genus.getPrefLabel() != null) {
+					owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
+							owlFactory.getOWLAnnotationProperty(SKOS.PREF_LABEL.stringValue()),
+							owlGenusClass.getIRI(),
+							owlFactory.getOWLLiteral(genus.getPrefLabel())));
+				}
+				owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
+						owlFactory.getOWLAnnotationProperty(RDFS.COMMENT.stringValue()),
+						owlGenusClass.getIRI(),
+						owlFactory.getOWLLiteral(genus.getDefaultAnnotation())));
+
+				if (genus.getAltLabel() != null) {
+					owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
+							owlFactory.getOWLAnnotationProperty(SKOS.ALT_LABEL.stringValue()),
+							owlGenusClass.getIRI(),
+							owlFactory.getOWLLiteral(genus.getAltLabel())));
+				}
+
 				if (genus.getMedicalUses() !=  null && ! genus.getMedicalUses().isEmpty()) {
-					List<OWLClass> usages = new ArrayList<>();
-					for (String medicUse : genus.getMedicalUses()) {
-						OWLClass owlmedicUse = owlFactory.getOWLClass(":" + medicUse, owlPrefixManager);
-						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlmedicUse));
-						owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlmedicUse, owlMedicalUses));
-						usages.add(owlmedicUse);
+					genus.getMedicalUses().remove(null);
+					if (!genus.getMedicalUses().isEmpty()) {
+						List<OWLClass> usages = new ArrayList<>();
+						for (String medicUse : genus.getMedicalUses()) {
+							OWLClass owlmedicUse = owlFactory.getOWLClass(":" + capitalize(medicUse), owlPrefixManager);
+							owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlmedicUse));
+							owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlmedicUse, owlMedicalUses));
+							usages.add(owlmedicUse);
+						}
+						OWLObjectProperty owlMedicalUse = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "AUsageMedicinal", owlPrefixManager);
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlMedicalUse));
+						OWLClassExpression range = owlFactory.getOWLObjectUnionOf(usages);
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(owlMedicalUse, owlGenusClass));
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(owlMedicalUse, range));
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLSubObjectPropertyOfAxiom(owlMedicalUse, hasMedicinalUse));
 					}
-					OWLObjectProperty owlMedicalUse = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "AUsageMedicinal", owlPrefixManager);
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlMedicalUse));
-					OWLClassExpression range = owlFactory.getOWLObjectUnionOf(usages);
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(owlMedicalUse, owlGenusClass));
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(owlMedicalUse, range));
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLSubObjectPropertyOfAxiom(owlMedicalUse, hasMedicinalUse));
 				}
 				if (genus.getUses() !=  null && ! genus.getUses().isEmpty()) {
-					List<OWLClass> usages = new ArrayList<>();
-					for (String use : genus.getUses()) {
-						OWLClass owlGenusUse = owlFactory.getOWLClass(":" + use, owlPrefixManager);
-						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlGenusUse));
-						owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlGenusUse, owlMedicalUses));
-						usages.add(owlGenusUse);
+					genus.getUses().remove(null);
+					if (!genus.getUses().isEmpty()) {
+						List<OWLClass> usages = new ArrayList<>();
+						for (String use : genus.getUses()) {
+							OWLClass owlGenusUse = owlFactory.getOWLClass(":" + capitalize(use), owlPrefixManager);
+							owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlGenusUse));
+							owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlGenusUse, owlUses));
+							usages.add(owlGenusUse);
+						}
+						OWLObjectProperty owlUse = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "AUtilite", owlPrefixManager);
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlUse));
+						OWLClassExpression range = owlFactory.getOWLObjectUnionOf(usages);
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(owlUse, owlGenusClass));
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(owlUse, range));
+						owlManager.addAxiom(owlOntology, owlFactory.getOWLSubObjectPropertyOfAxiom(owlUse, hasUse));
 					}
-					OWLObjectProperty owlUse = owlFactory.getOWLObjectProperty(":" + lowerCaseFirst(genus.getName()) + "AUtilite", owlPrefixManager);
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlUse));
-					OWLClassExpression range = owlFactory.getOWLObjectUnionOf(usages);
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyDomainAxiom(owlUse, owlGenusClass));
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLObjectPropertyRangeAxiom(owlUse, range));
-					owlManager.addAxiom(owlOntology, owlFactory.getOWLSubObjectPropertyOfAxiom(owlUse, hasUse));
 				}
 			}
-			
 		}
 		
 		//enums class generation
