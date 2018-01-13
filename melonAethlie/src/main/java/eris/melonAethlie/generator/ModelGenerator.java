@@ -107,6 +107,10 @@ public class ModelGenerator {
 			OWLClass owlFamilyClass = owlFactory.getOWLClass(":" +family.getName(), owlPrefixManager);
 			owlManager.addAxiom(owlOntology, owlFactory.getOWLDeclarationAxiom(owlFamilyClass));
 			owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlFamilyClass, owlPlantClass));
+			owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
+					owlFactory.getOWLAnnotationProperty(RDFS.COMMENT.stringValue()),
+					owlFamilyClass.getIRI(),
+					owlFactory.getOWLLiteral(family.getDefaultComment(), "fr")));
 			plants : for (Plant genus : family.getPlants()) {
 				if (genus.getName() == null) continue plants;
 				OWLClass owlGenusClass = owlFactory.getOWLClass(":" + genus.getName(), owlPrefixManager);
@@ -114,26 +118,26 @@ public class ModelGenerator {
 				owlManager.addAxiom(owlOntology, owlFactory.getOWLSubClassOfAxiom(owlGenusClass, owlFamilyClass));
 				if (genus.getPrefLabel() != null) {
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
-							owlFactory.getOWLAnnotationProperty(SKOS.PREF_LABEL.stringValue()),
+							owlFactory.getOWLAnnotationProperty(SKOS.PREF_LABEL.stringValue(), "fr"),
 							owlGenusClass.getIRI(),
 							owlFactory.getOWLLiteral(genus.getPrefLabel())));
 				}
 				owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
 						owlFactory.getOWLAnnotationProperty(RDFS.COMMENT.stringValue()),
 						owlGenusClass.getIRI(),
-						owlFactory.getOWLLiteral(genus.getDefaultAnnotation())));
+						owlFactory.getOWLLiteral(genus.getDefaultAnnotation(), "fr")));
 
 				if (genus.getAltLabel() != null) {
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
 							owlFactory.getOWLAnnotationProperty(SKOS.ALT_LABEL.stringValue()),
 							owlGenusClass.getIRI(),
-							owlFactory.getOWLLiteral(genus.getAltLabel())));
+							owlFactory.getOWLLiteral(genus.getAltLabel(), "fr")));
 				}
 				if (genus.getComments()!= null && !genus.getComments().trim().equals("")) {
 					owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
 							owlFactory.getOWLAnnotationProperty(RDFS.COMMENT.stringValue()),
 							owlGenusClass.getIRI(),
-							owlFactory.getOWLLiteral(genus.getComments().trim())));
+							owlFactory.getOWLLiteral(genus.getComments().trim(), "fr")));
 				}
 
 				if (genus.getMedicalUses() !=  null && ! genus.getMedicalUses().isEmpty()) {
@@ -522,6 +526,14 @@ public class ModelGenerator {
 				}
 			}
 		}
+		owlManager.addAxiom(owlOntology, owlFactory.getOWLDisjointClassesAxiom(
+				families
+					.stream()
+					.map(f -> f.getPlants())
+					.reduce((a, b) -> {a.addAll(b); return a;})
+					.get().stream()
+					.map(p -> owlFactory.getOWLClass(":" + p.getName(), owlPrefixManager))
+					.collect(Collectors.toSet())));
 		owlManager.saveOntology(owlOntology, new FileOutputStream("eris.owl"));
 		
 	}

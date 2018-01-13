@@ -28,5 +28,9 @@ public class Family {
 	public void setPlants(Set<Plant> plants) {
 		this.plants = plants;
 	}
+	
+	public String getDefaultComment() {
+		return "classe pour décrire la famille : " + name;
+	}
 
 }

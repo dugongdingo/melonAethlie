@@ -30,10 +30,10 @@
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabelfr -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabelfr"/>
     
 
 
@@ -31314,8 +31314,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Abricotier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : abricotier</rdfs:comment>
-        <rdfs:comment>souvent autofertile</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : abricotier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">souvent autofertile</rdfs:comment>
     </owl:Class>
     
 
@@ -31325,8 +31325,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AchilléeMillefeuille">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>Médicinale pour le cycle féminin , infusion ou poudre de somité fleurie, feuille hémostatique (coupures et désinfectante, petites plaies)</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Achillée millefeuille</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Médicinale pour le cycle féminin , infusion ou poudre de somité fleurie, feuille hémostatique (coupures et désinfectante, petites plaies)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Achillée millefeuille</rdfs:comment>
     </owl:Class>
     
 
@@ -31345,6 +31345,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Actinidiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Actinidiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31354,6 +31355,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Acéracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Acéracée</rdfs:comment>
     </owl:Class>
     
 
@@ -31363,6 +31365,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Adoxacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Adoxacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31372,6 +31375,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Agavacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Agavacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31381,8 +31385,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Agave">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Agavacée"/>
-        <rdfs:comment>classe pour décrire la plante : Agave</rdfs:comment>
-        <rdfs:comment>maux digestifs</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Agave</rdfs:comment>
+        <rdfs:comment xml:lang="fr">maux digestifs</rdfs:comment>
     </owl:Class>
     
 
@@ -31392,7 +31396,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ail">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : ail</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : ail</rdfs:comment>
     </owl:Class>
     
 
@@ -31402,8 +31406,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AilDesOurs">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : ail des ours</rdfs:comment>
-        <rdfs:comment>récolte avant floraison</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : ail des ours</rdfs:comment>
+        <rdfs:comment xml:lang="fr">récolte avant floraison</rdfs:comment>
     </owl:Class>
     
 
@@ -31413,7 +31417,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AirelleRouge">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ericacée"/>
-        <rdfs:comment>classe pour décrire la plante : Airelle rouge</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Airelle rouge</rdfs:comment>
     </owl:Class>
     
 
@@ -31423,6 +31427,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aizoaceae">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Aizoaceae</rdfs:comment>
     </owl:Class>
     
 
@@ -31432,6 +31437,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aizoacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Aizoacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31441,7 +31447,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Akebia">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lardizabalacée"/>
-        <rdfs:comment>classe pour décrire la plante : akebia</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : akebia</rdfs:comment>
     </owl:Class>
     
 
@@ -31451,6 +31457,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amarantacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Amarantacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31460,7 +31467,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amarante">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Amarantacée"/>
-        <rdfs:comment>classe pour décrire la plante : Amarante</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Amarante</rdfs:comment>
     </owl:Class>
     
 
@@ -31470,7 +31477,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amelanchier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : amelanchier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : amelanchier</rdfs:comment>
     </owl:Class>
     
 
@@ -31480,7 +31487,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amélanchier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Amélanchier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Amélanchier</rdfs:comment>
     </owl:Class>
     
 
@@ -31490,6 +31497,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Anacardiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Anacardiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31499,7 +31507,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Anacardier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Anacardiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Anacardier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Anacardier</rdfs:comment>
     </owl:Class>
     
 
@@ -31518,6 +31526,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Annonacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Annonacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31591,6 +31600,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Apiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Apiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31600,6 +31610,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Aracée</rdfs:comment>
     </owl:Class>
     
 
@@ -31609,7 +31620,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AralieÀGrappe">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Autre"/>
-        <rdfs:comment>classe pour décrire la plante : Aralie à grappe</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Aralie à grappe</rdfs:comment>
     </owl:Class>
     
 
@@ -31619,8 +31630,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arbousier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ericacée"/>
-        <rdfs:comment>La plantation, la taille et l’entretien de l’arbousier permettront d’améliorer le bon développement de votre arbuste.</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Arbousier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">La plantation, la taille et l’entretien de l’arbousier permettront d’améliorer le bon développement de votre arbuste.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Arbousier</rdfs:comment>
     </owl:Class>
     
 
@@ -31630,8 +31641,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ArbreDePluie">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Arbre de pluie</rdfs:comment>
-        <rdfs:comment>les feuilles se referment la nuit et en temps de pluie, ombre légère</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Arbre de pluie</rdfs:comment>
+        <rdfs:comment xml:lang="fr">les feuilles se referment la nuit et en temps de pluie, ombre légère</rdfs:comment>
     </owl:Class>
     
 
@@ -31650,8 +31661,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Argousier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Eleagnacée"/>
-        <rdfs:comment>classe pour décrire la plante : Argousier</rdfs:comment>
-        <rdfs:comment>fertilise le sol, à planter par couple,floraison mars</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Argousier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">fertilise le sol, à planter par couple,floraison mars</rdfs:comment>
     </owl:Class>
     
 
@@ -31670,8 +31681,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AroniaÀFruitNoirs">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>Aime les sols humides</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Aronia à fruit noirs</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Aime les sols humides</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Aronia à fruit noirs</rdfs:comment>
     </owl:Class>
     
 
@@ -31681,7 +31692,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arroche">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chenopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Arroche</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Arroche</rdfs:comment>
     </owl:Class>
     
 
@@ -31691,7 +31702,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Artichaut">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : artichaut</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : artichaut</rdfs:comment>
     </owl:Class>
     
 
@@ -31701,6 +31712,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arécacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Arécacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31710,8 +31722,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Asiminier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Annonacée"/>
-        <rdfs:comment>A besoin de chaleur pour fructifier</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Asiminier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">A besoin de chaleur pour fructifier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Asiminier</rdfs:comment>
     </owl:Class>
     
 
@@ -31721,6 +31733,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Asparagacee">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Asparagacee</rdfs:comment>
     </owl:Class>
     
 
@@ -31730,8 +31743,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Asperge">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asparagacee"/>
-        <rdfs:comment>classe pour décrire la plante : asperge</rdfs:comment>
-        <rdfs:comment>recolte à partir de la 3eme année</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : asperge</rdfs:comment>
+        <rdfs:comment xml:lang="fr">recolte à partir de la 3eme année</rdfs:comment>
     </owl:Class>
     
 
@@ -31741,6 +31754,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Asteracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Asteracée</rdfs:comment>
     </owl:Class>
     
 
@@ -31759,6 +31773,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Astéracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Astéracée</rdfs:comment>
     </owl:Class>
     
 
@@ -31768,7 +31783,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aubergines">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
-        <rdfs:comment>classe pour décrire la plante : aubergines</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : aubergines</rdfs:comment>
     </owl:Class>
     
 
@@ -31778,7 +31793,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AubépineFruitière">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Aubépine fruitière</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Aubépine fruitière</rdfs:comment>
     </owl:Class>
     
 
@@ -31788,8 +31803,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AulneDeCorse">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Betulacée"/>
-        <rdfs:comment>bois imputrescible, croissance rapide</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Aulne de corse</rdfs:comment>
+        <rdfs:comment xml:lang="fr">bois imputrescible, croissance rapide</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Aulne de corse</rdfs:comment>
     </owl:Class>
     
 
@@ -31799,8 +31814,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#AulneGlutineux">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Betulacée"/>
-        <rdfs:comment>bois imputrescible</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Aulne glutineux</rdfs:comment>
+        <rdfs:comment xml:lang="fr">bois imputrescible</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Aulne glutineux</rdfs:comment>
     </owl:Class>
     
 
@@ -31810,6 +31825,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Autre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Autre</rdfs:comment>
     </owl:Class>
     
 
@@ -31819,8 +31835,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Avoine">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : avoine</rdfs:comment>
-        <rdfs:comment>facile à récolter</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : avoine</rdfs:comment>
+        <rdfs:comment xml:lang="fr">facile à récolter</rdfs:comment>
     </owl:Class>
     
 
@@ -31839,8 +31855,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#BaieAux5Saveurs">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Autre"/>
-        <rdfs:comment>classe pour décrire la plante : baie aux 5 saveurs</rdfs:comment>
-        <rdfs:comment>liane dioique</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : baie aux 5 saveurs</rdfs:comment>
+        <rdfs:comment xml:lang="fr">liane dioique</rdfs:comment>
     </owl:Class>
     
 
@@ -31850,8 +31866,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bambou">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : bambou</rdfs:comment>
-        <rdfs:comment>croissance rapide</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : bambou</rdfs:comment>
+        <rdfs:comment xml:lang="fr">croissance rapide</rdfs:comment>
     </owl:Class>
     
 
@@ -31861,8 +31877,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bardane">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Astéracée"/>
-        <rdfs:comment>Anti mildiou</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Bardane</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Anti mildiou</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Bardane</rdfs:comment>
     </owl:Class>
     
 
@@ -31881,6 +31897,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Basélacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Basélacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31890,6 +31907,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Berberidacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Berberidacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31920,7 +31938,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#BetteMaritime">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chénopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Bette maritime</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Bette maritime</rdfs:comment>
     </owl:Class>
     
 
@@ -31930,7 +31948,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Betteraves">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chéopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : betteraves</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : betteraves</rdfs:comment>
     </owl:Class>
     
 
@@ -31940,6 +31958,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Betulacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Betulacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31949,7 +31968,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ble">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : ble</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : ble</rdfs:comment>
     </owl:Class>
     
 
@@ -31959,7 +31978,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#BleDur">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : ble dur</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : ble dur</rdfs:comment>
     </owl:Class>
     
 
@@ -31969,7 +31988,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#BleTendre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : ble tendre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : ble tendre</rdfs:comment>
     </owl:Class>
     
 
@@ -31988,6 +32007,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Boraginacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Boraginacée</rdfs:comment>
     </owl:Class>
     
 
@@ -31997,6 +32017,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Borignacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Borignacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32006,8 +32027,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bouleau">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Betulacée"/>
-        <rdfs:comment>classe pour décrire la plante : bouleau</rdfs:comment>
-        <rdfs:comment>croissance rapide</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : bouleau</rdfs:comment>
+        <rdfs:comment xml:lang="fr">croissance rapide</rdfs:comment>
     </owl:Class>
     
 
@@ -32017,7 +32038,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bourrache">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Boraginacée"/>
-        <rdfs:comment>classe pour décrire la plante : bourrache</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : bourrache</rdfs:comment>
     </owl:Class>
     
 
@@ -32036,6 +32057,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Brassicacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Brassicacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32054,8 +32076,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#BrocoliNineStar">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : brocoli nine star</rdfs:comment>
-        <rdfs:comment>meurt si on le laisse monter en graine</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : brocoli nine star</rdfs:comment>
+        <rdfs:comment xml:lang="fr">meurt si on le laisse monter en graine</rdfs:comment>
     </owl:Class>
     
 
@@ -32065,6 +32087,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Campanulacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Campanulacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32074,8 +32097,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Camphrier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lauracée"/>
-        <rdfs:comment>classe pour décrire la plante : Camphrier</rdfs:comment>
-        <rdfs:comment>croissance rapide</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Camphrier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">croissance rapide</rdfs:comment>
     </owl:Class>
     
 
@@ -32085,6 +32108,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cannabacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Cannabacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32094,7 +32118,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CanneÀSucre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : Canne à sucre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Canne à sucre</rdfs:comment>
     </owl:Class>
     
 
@@ -32104,7 +32128,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CapucineTubereuse">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Tropaeolaceae"/>
-        <rdfs:comment>classe pour décrire la plante : capucine tubereuse</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : capucine tubereuse</rdfs:comment>
     </owl:Class>
     
 
@@ -32121,8 +32145,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cardons">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>Blanchir les feuilles</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : cardons</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Blanchir les feuilles</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : cardons</rdfs:comment>
     </owl:Class>
     
 
@@ -32132,7 +32156,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CarottesEte">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Apiacée"/>
-        <rdfs:comment>classe pour décrire la plante : carottes ete</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : carottes ete</rdfs:comment>
     </owl:Class>
     
 
@@ -32142,7 +32166,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CarottesHiver">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Apiacée"/>
-        <rdfs:comment>classe pour décrire la plante : carottes hiver</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : carottes hiver</rdfs:comment>
     </owl:Class>
     
 
@@ -32152,7 +32176,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CarottesPrintemps">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Apiacée"/>
-        <rdfs:comment>classe pour décrire la plante : carottes printemps</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : carottes printemps</rdfs:comment>
     </owl:Class>
     
 
@@ -32162,8 +32186,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Caroubier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Caroubier</rdfs:comment>
-        <rdfs:comment>substitut du chocolat</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Caroubier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">substitut du chocolat</rdfs:comment>
     </owl:Class>
     
 
@@ -32173,7 +32197,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cassisier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Grossuliaracée"/>
-        <rdfs:comment>classe pour décrire la plante : Cassisier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Cassisier</rdfs:comment>
     </owl:Class>
     
 
@@ -32183,8 +32207,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ceanothus">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ramnacée"/>
-        <rdfs:comment>classe pour décrire la plante : Ceanothus</rdfs:comment>
-        <rdfs:comment>mellifère</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Ceanothus</rdfs:comment>
+        <rdfs:comment xml:lang="fr">mellifère</rdfs:comment>
     </owl:Class>
     
 
@@ -32194,7 +32218,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cerisier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : cerisier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : cerisier</rdfs:comment>
     </owl:Class>
     
 
@@ -32204,7 +32228,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CerisierTomenteux">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Cerisier tomenteux</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Cerisier tomenteux</rdfs:comment>
     </owl:Class>
     
 
@@ -32214,7 +32238,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chalef">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Eleagnacée"/>
-        <rdfs:comment>classe pour décrire la plante : Chalef</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Chalef</rdfs:comment>
     </owl:Class>
     
 
@@ -32224,8 +32248,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChenopodeDeBonHenri">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : chenopode de bon henri</rdfs:comment>
-        <rdfs:comment>prendre les feuilles basses</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : chenopode de bon henri</rdfs:comment>
+        <rdfs:comment xml:lang="fr">prendre les feuilles basses</rdfs:comment>
     </owl:Class>
     
 
@@ -32235,6 +32259,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chenopodiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Chenopodiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32244,7 +32269,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cherimolier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Annonacée"/>
-        <rdfs:comment>classe pour décrire la plante : Cherimolier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Cherimolier</rdfs:comment>
     </owl:Class>
     
 
@@ -32254,7 +32279,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChicoréesFriséesEtScaroles">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : chicorées frisées et scaroles</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : chicorées frisées et scaroles</rdfs:comment>
     </owl:Class>
     
 
@@ -32264,7 +32289,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChicoréesWitloofEndives">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : chicorées witloof endives</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : chicorées witloof endives</rdfs:comment>
     </owl:Class>
     
 
@@ -32274,7 +32299,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chou-fleursDHiver">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : chou-fleurs d hiver</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : chou-fleurs d hiver</rdfs:comment>
     </owl:Class>
     
 
@@ -32284,7 +32309,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChouDaubenton">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : chou daubenton</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : chou daubenton</rdfs:comment>
     </owl:Class>
     
 
@@ -32294,7 +32319,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChouKale">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : chou kale</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : chou kale</rdfs:comment>
     </owl:Class>
     
 
@@ -32304,7 +32329,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Choux-fleurs">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : choux-fleurs</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : choux-fleurs</rdfs:comment>
     </owl:Class>
     
 
@@ -32314,7 +32339,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChouxBrocolis">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : choux brocolis</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : choux brocolis</rdfs:comment>
     </owl:Class>
     
 
@@ -32324,7 +32349,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChouxDeBruxelles">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : choux de bruxelles</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : choux de bruxelles</rdfs:comment>
     </owl:Class>
     
 
@@ -32334,7 +32359,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChouxDePrintempsCabus">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : choux de printemps cabus</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : choux de printemps cabus</rdfs:comment>
     </owl:Class>
     
 
@@ -32344,7 +32369,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChouxDÉtéDAutomneEtDHiverCabusDeMilan">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : choux d été d automne et d hiver cabus de milan</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : choux d été d automne et d hiver cabus de milan</rdfs:comment>
     </owl:Class>
     
 
@@ -32354,8 +32379,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chätaigner">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fagacée"/>
-        <rdfs:comment>bois imputrescible</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Chätaigner</rdfs:comment>
+        <rdfs:comment xml:lang="fr">bois imputrescible</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Chätaigner</rdfs:comment>
     </owl:Class>
     
 
@@ -32365,6 +32390,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chénopodiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Chénopodiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32374,6 +32400,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chéopodiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Chéopodiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32383,7 +32410,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CibouleDeChine">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : ciboule de chine</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : ciboule de chine</rdfs:comment>
     </owl:Class>
     
 
@@ -32393,7 +32420,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Citronnier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rutacée"/>
-        <rdfs:comment>classe pour décrire la plante : Citronnier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Citronnier</rdfs:comment>
     </owl:Class>
     
 
@@ -32403,8 +32430,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ClaytoneDeCuba">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Montiacée"/>
-        <rdfs:comment>classe pour décrire la plante : claytone de cuba</rdfs:comment>
-        <rdfs:comment>voir aussi la clayone de sibérie, moins gélive et vivace</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : claytone de cuba</rdfs:comment>
+        <rdfs:comment xml:lang="fr">voir aussi la clayone de sibérie, moins gélive et vivace</rdfs:comment>
     </owl:Class>
     
 
@@ -32414,7 +32441,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ComptonieVoyageuse">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myricacée"/>
-        <rdfs:comment>classe pour décrire la plante : Comptonie voyageuse</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Comptonie voyageuse</rdfs:comment>
     </owl:Class>
     
 
@@ -32424,7 +32451,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ConcombresCornichons">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cucurbitacée"/>
-        <rdfs:comment>classe pour décrire la plante : concombres cornichons</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : concombres cornichons</rdfs:comment>
     </owl:Class>
     
 
@@ -32434,7 +32461,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Consoude">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Borignacée"/>
-        <rdfs:comment>classe pour décrire la plante : consoude</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : consoude</rdfs:comment>
     </owl:Class>
     
 
@@ -32453,6 +32480,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Convolvulaceae">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Convolvulaceae</rdfs:comment>
     </owl:Class>
     
 
@@ -32462,6 +32490,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Convolvulacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Convolvulacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32471,8 +32500,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cormier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Cormier</rdfs:comment>
-        <rdfs:comment>utile pour produire le vin de corme</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Cormier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">utile pour produire le vin de corme</rdfs:comment>
     </owl:Class>
     
 
@@ -32482,7 +32511,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cotonnier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Malvacée"/>
-        <rdfs:comment>classe pour décrire la plante : Cotonnier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Cotonnier</rdfs:comment>
     </owl:Class>
     
 
@@ -32492,7 +32521,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CourgeButternut">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cucurbitacée"/>
-        <rdfs:comment>classe pour décrire la plante : courge butternut</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : courge butternut</rdfs:comment>
     </owl:Class>
     
 
@@ -32502,7 +32531,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Courgettes">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cucurbitacée"/>
-        <rdfs:comment>classe pour décrire la plante : courgettes</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : courgettes</rdfs:comment>
     </owl:Class>
     
 
@@ -32521,7 +32550,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CrambeMaritime">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : crambe maritime</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : crambe maritime</rdfs:comment>
     </owl:Class>
     
 
@@ -32531,6 +32560,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Crassulacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Crassulacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32540,7 +32570,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CressonDeJardin">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : cresson de jardin</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : cresson de jardin</rdfs:comment>
     </owl:Class>
     
 
@@ -32550,8 +32580,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CressonDesFontaines">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : cresson des fontaines</rdfs:comment>
-        <rdfs:comment>croissance rapide</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : cresson des fontaines</rdfs:comment>
+        <rdfs:comment xml:lang="fr">croissance rapide</rdfs:comment>
     </owl:Class>
     
 
@@ -32561,6 +32591,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cucurbitacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Cucurbitacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32570,6 +32601,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cyperacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Cyperacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32579,6 +32611,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cypéracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Cypéracée</rdfs:comment>
     </owl:Class>
     
 
@@ -32588,7 +32621,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Cédratier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rutacée"/>
-        <rdfs:comment>classe pour décrire la plante : Cédratier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Cédratier</rdfs:comment>
     </owl:Class>
     
 
@@ -32598,7 +32631,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Céleris-raves">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Apiacée"/>
-        <rdfs:comment>classe pour décrire la plante : céleris-raves</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : céleris-raves</rdfs:comment>
     </owl:Class>
     
 
@@ -32608,7 +32641,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CélerisÀCouper">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : céleris à couper</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : céleris à couper</rdfs:comment>
     </owl:Class>
     
 
@@ -32618,7 +32651,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#CélerisÀCôtes">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : céleris à côtes</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : céleris à côtes</rdfs:comment>
     </owl:Class>
     
 
@@ -32664,6 +32697,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Dioscoracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Dioscoracée</rdfs:comment>
     </owl:Class>
     
 
@@ -32691,6 +32725,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ebenacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Ebenacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32700,6 +32735,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Eleagnacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Eleagnacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32727,7 +32763,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Epeautre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : epeautre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : epeautre</rdfs:comment>
     </owl:Class>
     
 
@@ -32737,7 +32773,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#EpinardFraise">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chenopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Epinard fraise</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Epinard fraise</rdfs:comment>
     </owl:Class>
     
 
@@ -32756,8 +32792,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Erable">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Acéracée"/>
-        <rdfs:comment>classe pour décrire la plante : Erable</rdfs:comment>
-        <rdfs:comment>sève sucrée</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Erable</rdfs:comment>
+        <rdfs:comment xml:lang="fr">sève sucrée</rdfs:comment>
     </owl:Class>
     
 
@@ -32767,6 +32803,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ericacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Ericacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32776,6 +32813,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fabacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Fabacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32785,6 +32823,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fagacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Fagacée</rdfs:comment>
     </owl:Class>
     
 
@@ -32821,7 +32860,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#FauxIndigo">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Faux indigo</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Faux indigo</rdfs:comment>
     </owl:Class>
     
 
@@ -32831,8 +32870,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Feijoa">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myrtacée"/>
-        <rdfs:comment>classe pour décrire la plante : Feijoa</rdfs:comment>
-        <rdfs:comment>non auto-fertiles sauf Coolidge</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Feijoa</rdfs:comment>
+        <rdfs:comment xml:lang="fr">non auto-fertiles sauf Coolidge</rdfs:comment>
     </owl:Class>
     
 
@@ -32842,7 +32881,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fenouils">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Apiacée"/>
-        <rdfs:comment>classe pour décrire la plante : fenouils</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : fenouils</rdfs:comment>
     </owl:Class>
     
 
@@ -32861,7 +32900,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fevier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Fevier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Fevier</rdfs:comment>
     </owl:Class>
     
 
@@ -32880,8 +32919,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Figuier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Moracée"/>
-        <rdfs:comment>Son bois sent bon</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : figuier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Son bois sent bon</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : figuier</rdfs:comment>
     </owl:Class>
     
 
@@ -32909,8 +32948,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fraisier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : fraisier</rdfs:comment>
-        <rdfs:comment>remontante :mara des bois cirafine cijosé charlotte</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : fraisier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">remontante :mara des bois cirafine cijosé charlotte</rdfs:comment>
     </owl:Class>
     
 
@@ -32920,7 +32959,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Framboise">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : framboise</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : framboise</rdfs:comment>
     </owl:Class>
     
 
@@ -32939,8 +32978,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Frêne">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Oléacée"/>
-        <rdfs:comment>bois dur, bon pour les manches</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : frêne</rdfs:comment>
+        <rdfs:comment xml:lang="fr">bois dur, bon pour les manches</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : frêne</rdfs:comment>
     </owl:Class>
     
 
@@ -32950,8 +32989,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Fève">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>Récolte 3 mois après le semis, repousse si on la taille au pied après fructification</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Fève</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Récolte 3 mois après le semis, repousse si on la taille au pied après fructification</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Fève</rdfs:comment>
     </owl:Class>
     
 
@@ -32961,7 +33000,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#FèvesPrintemps">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : fèves printemps</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : fèves printemps</rdfs:comment>
     </owl:Class>
     
 
@@ -32971,7 +33010,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#FèvesÉté">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : fèves été</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : fèves été</rdfs:comment>
     </owl:Class>
     
 
@@ -32981,7 +33020,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GaultheriaShallon">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ericacée"/>
-        <rdfs:comment>classe pour décrire la plante : Gaultheria shallon</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Gaultheria shallon</rdfs:comment>
     </owl:Class>
     
 
@@ -32991,7 +33030,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GaulthérieCouchée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Autre"/>
-        <rdfs:comment>classe pour décrire la plante : Gaulthérie couchée</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Gaulthérie couchée</rdfs:comment>
     </owl:Class>
     
 
@@ -33001,7 +33040,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Genêt">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Genêt</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Genêt</rdfs:comment>
     </owl:Class>
     
 
@@ -33011,7 +33050,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GingembreSauvage">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Autre"/>
-        <rdfs:comment>classe pour décrire la plante : Gingembre sauvage</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Gingembre sauvage</rdfs:comment>
     </owl:Class>
     
 
@@ -33021,6 +33060,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ginkgoacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Ginkgoacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33030,7 +33070,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GinkoBiloba">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ginkgoacée"/>
-        <rdfs:comment>classe pour décrire la plante : Ginko Biloba</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Ginko Biloba</rdfs:comment>
     </owl:Class>
     
 
@@ -33040,8 +33080,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Glycine">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Glycine</rdfs:comment>
-        <rdfs:comment>croissance rapide</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Glycine</rdfs:comment>
+        <rdfs:comment xml:lang="fr">croissance rapide</rdfs:comment>
     </owl:Class>
     
 
@@ -33051,8 +33091,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GlycineTubéreuse">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Glycine tubéreuse</rdfs:comment>
-        <rdfs:comment>patate en chapelet au Québec</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Glycine tubéreuse</rdfs:comment>
+        <rdfs:comment xml:lang="fr">patate en chapelet au Québec</rdfs:comment>
     </owl:Class>
     
 
@@ -33062,7 +33102,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GoumiDuJapon">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Eleagnacée"/>
-        <rdfs:comment>classe pour décrire la plante : Goumi du Japon</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Goumi du Japon</rdfs:comment>
     </owl:Class>
     
 
@@ -33072,7 +33112,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GoyaveDuChili">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myrtacée"/>
-        <rdfs:comment>classe pour décrire la plante : Goyave du Chili</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Goyave du Chili</rdfs:comment>
     </owl:Class>
     
 
@@ -33091,8 +33131,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Grenadier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Autre"/>
-        <rdfs:comment>classe pour décrire la plante : Grenadier</rdfs:comment>
-        <rdfs:comment>germe très bien</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Grenadier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">germe très bien</rdfs:comment>
     </owl:Class>
     
 
@@ -33102,7 +33142,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Groseiller">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Grossulariacée"/>
-        <rdfs:comment>classe pour décrire la plante : groseiller</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : groseiller</rdfs:comment>
     </owl:Class>
     
 
@@ -33112,6 +33152,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Grossulariacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Grossulariacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33121,6 +33162,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Grossuliaracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Grossuliaracée</rdfs:comment>
     </owl:Class>
     
 
@@ -33139,7 +33181,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#HaricotsNainsÀFiletsMangetout">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : haricots nains à filets mangetout</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : haricots nains à filets mangetout</rdfs:comment>
     </owl:Class>
     
 
@@ -33149,7 +33191,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#HaricotsÀRamesÀFiletsMangetout">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : haricots à rames à filets mangetout</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : haricots à rames à filets mangetout</rdfs:comment>
     </owl:Class>
     
 
@@ -33159,7 +33201,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#HaricotsÀÉcosserRécolteEnGrainsFrais">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : haricots à écosser récolte en grains frais</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : haricots à écosser récolte en grains frais</rdfs:comment>
     </owl:Class>
     
 
@@ -33169,7 +33211,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#HaricotsÀÉcosserRécolteEnGrainsSecs">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : haricots à écosser récolte en grains secs</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : haricots à écosser récolte en grains secs</rdfs:comment>
     </owl:Class>
     
 
@@ -33179,8 +33221,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#HostaDeFortune">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>Racine fragiles</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Hosta de fortune</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Racine fragiles</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Hosta de fortune</rdfs:comment>
     </owl:Class>
     
 
@@ -33190,8 +33232,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Houblon">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cannabacée"/>
-        <rdfs:comment>classe pour décrire la plante : houblon</rdfs:comment>
-        <rdfs:comment>planter à 40 cm du support, les jeunes pousses sont consommables</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : houblon</rdfs:comment>
+        <rdfs:comment xml:lang="fr">planter à 40 cm du support, les jeunes pousses sont consommables</rdfs:comment>
     </owl:Class>
     
 
@@ -33201,7 +33243,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#HuîtrePotagère">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Borignacée"/>
-        <rdfs:comment>classe pour décrire la plante : Huître potagère</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Huître potagère</rdfs:comment>
     </owl:Class>
     
 
@@ -33211,7 +33253,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Hémérocalle">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Autre"/>
-        <rdfs:comment>classe pour décrire la plante : Hémérocalle</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Hémérocalle</rdfs:comment>
     </owl:Class>
     
 
@@ -33221,8 +33263,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Hêtre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fagacée"/>
-        <rdfs:comment>classe pour décrire la plante : hêtre</rdfs:comment>
-        <rdfs:comment>haie occlusive car il garde ses feuilles séches</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : hêtre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">haie occlusive car il garde ses feuilles séches</rdfs:comment>
     </owl:Class>
     
 
@@ -33232,7 +33274,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#IgnameDeChine">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Dioscoracée"/>
-        <rdfs:comment>classe pour décrire la plante : Igname de chine</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Igname de chine</rdfs:comment>
     </owl:Class>
     
 
@@ -33278,6 +33320,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Juglandacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Juglandacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33305,7 +33348,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Jujubier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rhamnacée"/>
-        <rdfs:comment>classe pour décrire la plante : jujubier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : jujubier</rdfs:comment>
     </owl:Class>
     
 
@@ -33315,7 +33358,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Kiwi">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Actinidiacée"/>
-        <rdfs:comment>classe pour décrire la plante : kiwi</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : kiwi</rdfs:comment>
     </owl:Class>
     
 
@@ -33325,7 +33368,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Kumquat">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rutacée"/>
-        <rdfs:comment>classe pour décrire la plante : Kumquat</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Kumquat</rdfs:comment>
     </owl:Class>
     
 
@@ -33335,7 +33378,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LaituesDAutomne">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : laitues d automne</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : laitues d automne</rdfs:comment>
     </owl:Class>
     
 
@@ -33345,7 +33388,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LaituesDHiver">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : laitues d hiver</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : laitues d hiver</rdfs:comment>
     </owl:Class>
     
 
@@ -33355,7 +33398,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LaituesDePrintemps">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : laitues de printemps</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : laitues de printemps</rdfs:comment>
     </owl:Class>
     
 
@@ -33365,7 +33408,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LaituesDÉté">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : laitues d été</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : laitues d été</rdfs:comment>
     </owl:Class>
     
 
@@ -33375,7 +33418,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LaituesÀCouper">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : laitues à couper</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : laitues à couper</rdfs:comment>
     </owl:Class>
     
 
@@ -33385,7 +33428,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LaituesÀForcer">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : laitues à forcer</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : laitues à forcer</rdfs:comment>
     </owl:Class>
     
 
@@ -33395,6 +33438,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lamiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Lamiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33404,6 +33448,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lardizabalacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Lardizabalacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33413,6 +33458,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lauracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Lauracée</rdfs:comment>
     </owl:Class>
     
 
@@ -33422,7 +33468,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lavande">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lamiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Lavande</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Lavande</rdfs:comment>
     </owl:Class>
     
 
@@ -33432,7 +33478,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lentille">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : lentille</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : lentille</rdfs:comment>
     </owl:Class>
     
 
@@ -33442,7 +33488,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LianeDeMadere">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chenopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : liane de madere</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : liane de madere</rdfs:comment>
     </owl:Class>
     
 
@@ -33452,6 +33498,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Liliacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Liliacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33461,8 +33508,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lin">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Linacée"/>
-        <rdfs:comment>classe pour décrire la plante : lin</rdfs:comment>
-        <rdfs:comment>éloigne les doryphores?semer serré pour les fibres</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : lin</rdfs:comment>
+        <rdfs:comment xml:lang="fr">éloigne les doryphores?semer serré pour les fibres</rdfs:comment>
     </owl:Class>
     
 
@@ -33472,8 +33519,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#LinDeNouvelleZélande">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Xanthorrhoéacée"/>
-        <rdfs:comment>classe pour décrire la plante : Lin de nouvelle zélande</rdfs:comment>
-        <rdfs:comment>panier et vetements</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Lin de nouvelle zélande</rdfs:comment>
+        <rdfs:comment xml:lang="fr">panier et vetements</rdfs:comment>
     </owl:Class>
     
 
@@ -33483,6 +33530,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Linacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Linacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33492,7 +33540,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Litchi">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Sapindacée"/>
-        <rdfs:comment>classe pour décrire la plante : litchi</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : litchi</rdfs:comment>
     </owl:Class>
     
 
@@ -33502,7 +33550,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lotus">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Nélumbonacée"/>
-        <rdfs:comment>classe pour décrire la plante : Lotus</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Lotus</rdfs:comment>
     </owl:Class>
     
 
@@ -33512,7 +33560,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Lupin">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : lupin</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : lupin</rdfs:comment>
     </owl:Class>
     
 
@@ -33522,8 +33570,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Luzerne">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : luzerne</rdfs:comment>
-        <rdfs:comment>pour paillage jusqu à 4 coupes/an avant floraison</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : luzerne</rdfs:comment>
+        <rdfs:comment xml:lang="fr">pour paillage jusqu à 4 coupes/an avant floraison</rdfs:comment>
     </owl:Class>
     
 
@@ -33533,7 +33581,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Mahonia">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Berberidacée"/>
-        <rdfs:comment>classe pour décrire la plante : Mahonia</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Mahonia</rdfs:comment>
     </owl:Class>
     
 
@@ -33552,7 +33600,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#MainDeBouddha">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rutacée"/>
-        <rdfs:comment>classe pour décrire la plante : Main de bouddha</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Main de bouddha</rdfs:comment>
     </owl:Class>
     
 
@@ -33562,6 +33610,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Malvacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Malvacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33589,7 +33638,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Maïs">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : maïs</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : maïs</rdfs:comment>
     </owl:Class>
     
 
@@ -33608,7 +33657,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Melons">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cucurbitacée"/>
-        <rdfs:comment>classe pour décrire la plante : melons</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : melons</rdfs:comment>
     </owl:Class>
     
 
@@ -33618,8 +33667,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Micocoulier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cannabacée"/>
-        <rdfs:comment>Racine profonde, supporte bien les élaguages</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : micocoulier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Racine profonde, supporte bien les élaguages</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : micocoulier</rdfs:comment>
     </owl:Class>
     
 
@@ -33629,8 +33678,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Millet">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : millet</rdfs:comment>
-        <rdfs:comment>variété à grappesplus productives</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : millet</rdfs:comment>
+        <rdfs:comment xml:lang="fr">variété à grappesplus productives</rdfs:comment>
     </owl:Class>
     
 
@@ -33640,8 +33689,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Miscanthus">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>bonne production de biomasse</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Miscanthus</rdfs:comment>
+        <rdfs:comment xml:lang="fr">bonne production de biomasse</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Miscanthus</rdfs:comment>
     </owl:Class>
     
 
@@ -33658,7 +33707,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Monarde">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lamiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Monarde</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Monarde</rdfs:comment>
     </owl:Class>
     
 
@@ -33668,6 +33717,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Montiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Montiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33677,6 +33727,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Moracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Moracée</rdfs:comment>
     </owl:Class>
     
 
@@ -33686,7 +33737,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Moutarde">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : moutarde</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : moutarde</rdfs:comment>
     </owl:Class>
     
 
@@ -33721,6 +33772,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myricacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Myricacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33730,6 +33782,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myrtacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Myrtacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33739,7 +33792,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#MyrteDesMarais">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myricacée"/>
-        <rdfs:comment>classe pour décrire la plante : Myrte des Marais</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Myrte des Marais</rdfs:comment>
     </owl:Class>
     
 
@@ -33749,7 +33802,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Myrteola">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Myrtacée"/>
-        <rdfs:comment>classe pour décrire la plante : Myrteola</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Myrteola</rdfs:comment>
     </owl:Class>
     
 
@@ -33759,7 +33812,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#MyrtilleGéante">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ericacée"/>
-        <rdfs:comment>classe pour décrire la plante : Myrtille géante</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Myrtille géante</rdfs:comment>
     </owl:Class>
     
 
@@ -33769,7 +33822,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#MâchePerpetuelle">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Valérianacée"/>
-        <rdfs:comment>classe pour décrire la plante : mâche perpetuelle</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : mâche perpetuelle</rdfs:comment>
     </owl:Class>
     
 
@@ -33779,7 +33832,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Mâches">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Valérianacée"/>
-        <rdfs:comment>classe pour décrire la plante : mâches</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : mâches</rdfs:comment>
     </owl:Class>
     
 
@@ -33789,8 +33842,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Mûrier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Moracée"/>
-        <rdfs:comment>classe pour décrire la plante : Mûrier</rdfs:comment>
-        <rdfs:comment>dioïque</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Mûrier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">dioïque</rdfs:comment>
     </owl:Class>
     
 
@@ -33800,7 +33853,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Nashi">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Nashi</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Nashi</rdfs:comment>
     </owl:Class>
     
 
@@ -33810,7 +33863,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#NavetsDAutomne">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : navets d automne</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : navets d automne</rdfs:comment>
     </owl:Class>
     
 
@@ -33820,7 +33873,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#NavetsDePrintemps">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : navets de printemps</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : navets de printemps</rdfs:comment>
     </owl:Class>
     
 
@@ -33839,7 +33892,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Noisetier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Betulacée"/>
-        <rdfs:comment>classe pour décrire la plante : noisetier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : noisetier</rdfs:comment>
     </owl:Class>
     
 
@@ -33849,8 +33902,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#NombrilDeVénus">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Crassulacée"/>
-        <rdfs:comment>Grimpante</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Nombril de Vénus</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Grimpante</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Nombril de Vénus</rdfs:comment>
     </owl:Class>
     
 
@@ -33869,7 +33922,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Noyer">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Juglandacée"/>
-        <rdfs:comment>classe pour décrire la plante : Noyer</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Noyer</rdfs:comment>
     </owl:Class>
     
 
@@ -33879,6 +33932,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Nélumbonacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Nélumbonacée</rdfs:comment>
     </owl:Class>
     
 
@@ -33888,7 +33942,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OcaDuPérou">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Oxalidacée"/>
-        <rdfs:comment>classe pour décrire la plante : Oca du Pérou</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Oca du Pérou</rdfs:comment>
     </owl:Class>
     
 
@@ -33907,8 +33961,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OeilletDInde">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : oeillet d Inde</rdfs:comment>
-        <rdfs:comment>colorant (safran du pauvre), répulsif pucerons, liseron et chiendent</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oeillet d Inde</rdfs:comment>
+        <rdfs:comment xml:lang="fr">colorant (safran du pauvre), répulsif pucerons, liseron et chiendent</rdfs:comment>
     </owl:Class>
     
 
@@ -33918,7 +33972,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OignonPatate">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : Oignon patate</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Oignon patate</rdfs:comment>
     </owl:Class>
     
 
@@ -33928,7 +33982,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OignonsBlancs">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : oignons blancs</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oignons blancs</rdfs:comment>
     </owl:Class>
     
 
@@ -33938,7 +33992,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OignonsBlancsÀConfire">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : oignons blancs à confire</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oignons blancs à confire</rdfs:comment>
     </owl:Class>
     
 
@@ -33948,7 +34002,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OignonsDeCouleurAutomne">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : oignons de couleur automne</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oignons de couleur automne</rdfs:comment>
     </owl:Class>
     
 
@@ -33958,7 +34012,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OignonsDeCouleurPrintemps">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : oignons de couleur printemps</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oignons de couleur printemps</rdfs:comment>
     </owl:Class>
     
 
@@ -33968,7 +34022,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OignonsRocambole">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : oignons rocambole</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oignons rocambole</rdfs:comment>
     </owl:Class>
     
 
@@ -33978,7 +34032,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Olivier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Oléacée"/>
-        <rdfs:comment>classe pour décrire la plante : Olivier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Olivier</rdfs:comment>
     </owl:Class>
     
 
@@ -33988,7 +34042,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OlivierDeBohème">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Eleagnacée"/>
-        <rdfs:comment>classe pour décrire la plante : Olivier de Bohème</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Olivier de Bohème</rdfs:comment>
     </owl:Class>
     
 
@@ -33998,6 +34052,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Oléacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Oléacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34007,7 +34062,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Orge">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : orge</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : orge</rdfs:comment>
     </owl:Class>
     
 
@@ -34017,7 +34072,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Orme">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ulmacée"/>
-        <rdfs:comment>classe pour décrire la plante : orme</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : orme</rdfs:comment>
     </owl:Class>
     
 
@@ -34036,7 +34091,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ortie">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#UrticaDioïca"/>
-        <rdfs:comment>classe pour décrire la plante : Ortie</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Ortie</rdfs:comment>
     </owl:Class>
     
 
@@ -34046,7 +34101,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#OseilleEpinard">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Polygonacée"/>
-        <rdfs:comment>classe pour décrire la plante : oseille epinard</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oseille epinard</rdfs:comment>
     </owl:Class>
     
 
@@ -34056,7 +34111,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Oseilles">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Polygonacée"/>
-        <rdfs:comment>classe pour décrire la plante : oseilles</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : oseilles</rdfs:comment>
     </owl:Class>
     
 
@@ -34066,6 +34121,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Oxalidacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Oxalidacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34084,7 +34140,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PalmierÀSucre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Arécacée"/>
-        <rdfs:comment>classe pour décrire la plante : Palmier à sucre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Palmier à sucre</rdfs:comment>
     </owl:Class>
     
 
@@ -34094,7 +34150,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Panais">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Apiacée"/>
-        <rdfs:comment>classe pour décrire la plante : panais</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : panais</rdfs:comment>
     </owl:Class>
     
 
@@ -34129,6 +34185,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Passifloracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Passifloracée</rdfs:comment>
     </owl:Class>
     
 
@@ -34138,7 +34195,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PatateDouce">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Convolvulacée"/>
-        <rdfs:comment>classe pour décrire la plante : Patate douce</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Patate douce</rdfs:comment>
     </owl:Class>
     
 
@@ -34148,8 +34205,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PaulowniaImperial">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Paulowniacée"/>
-        <rdfs:comment>classe pour décrire la plante : Paulownia imperial</rdfs:comment>
-        <rdfs:comment>croissance rapide,recèpe</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Paulownia imperial</rdfs:comment>
+        <rdfs:comment xml:lang="fr">croissance rapide,recèpe</rdfs:comment>
     </owl:Class>
     
 
@@ -34159,6 +34216,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Paulowniacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Paulowniacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34168,7 +34226,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Persil">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Apiacée"/>
-        <rdfs:comment>classe pour décrire la plante : persil</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : persil</rdfs:comment>
     </owl:Class>
     
 
@@ -34178,7 +34236,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Physalis">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
-        <rdfs:comment>classe pour décrire la plante : Physalis</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Physalis</rdfs:comment>
     </owl:Class>
     
 
@@ -34188,7 +34246,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PinDeCorée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Pinacée"/>
-        <rdfs:comment>classe pour décrire la plante : Pin de Corée</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Pin de Corée</rdfs:comment>
     </owl:Class>
     
 
@@ -34198,6 +34256,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Pinacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Pinacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34225,7 +34284,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Plantain">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plantiginacée"/>
-        <rdfs:comment>classe pour décrire la plante : plantain</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : plantain</rdfs:comment>
     </owl:Class>
     
 
@@ -34251,6 +34310,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Plantiginacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Plantiginacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34260,6 +34320,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Poacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Poacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34269,8 +34330,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoireDeTerre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : poire de terre</rdfs:comment>
-        <rdfs:comment>polymnia</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : poire de terre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">polymnia</rdfs:comment>
     </owl:Class>
     
 
@@ -34280,7 +34341,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoireauPerpetuel">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : poireau perpetuel</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : poireau perpetuel</rdfs:comment>
     </owl:Class>
     
 
@@ -34290,7 +34351,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoireauxDAutomneEtDHiver">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : poireaux d automne et d hiver</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : poireaux d automne et d hiver</rdfs:comment>
     </owl:Class>
     
 
@@ -34300,7 +34361,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoireauxDÉté">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Liliacée"/>
-        <rdfs:comment>classe pour décrire la plante : poireaux d été</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : poireaux d été</rdfs:comment>
     </owl:Class>
     
 
@@ -34310,7 +34371,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Poirier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : poirier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : poirier</rdfs:comment>
     </owl:Class>
     
 
@@ -34320,8 +34381,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoiréesBlettesBettes">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chenopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : poirées blettes bettes</rdfs:comment>
-        <rdfs:comment>mulcher pendant les gelées</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : poirées blettes bettes</rdfs:comment>
+        <rdfs:comment xml:lang="fr">mulcher pendant les gelées</rdfs:comment>
     </owl:Class>
     
 
@@ -34331,7 +34392,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoisChiche">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : pois chiche</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : pois chiche</rdfs:comment>
     </owl:Class>
     
 
@@ -34341,7 +34402,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoisÀGrainRidéEtMangetout">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : pois à grain ridé et mangetout</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : pois à grain ridé et mangetout</rdfs:comment>
     </owl:Class>
     
 
@@ -34351,7 +34412,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoisÀGrainRondEtMangetout">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : pois à grain rond et mangetout</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : pois à grain rond et mangetout</rdfs:comment>
     </owl:Class>
     
 
@@ -34361,7 +34422,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoisÀGrainRondOuRidéPrécoces">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : pois à grain rond ou ridé précoces</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : pois à grain rond ou ridé précoces</rdfs:comment>
     </owl:Class>
     
 
@@ -34371,8 +34432,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Poivron">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
-        <rdfs:comment>classe pour décrire la plante : poivron</rdfs:comment>
-        <rdfs:comment>ne germe qu au dessus de 28°c</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : poivron</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ne germe qu au dessus de 28°c</rdfs:comment>
     </owl:Class>
     
 
@@ -34382,6 +34443,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Polygonacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Polygonacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34391,8 +34453,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PommeDeTerre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
-        <rdfs:comment>butter les pieds</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : pomme de terre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">butter les pieds</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : pomme de terre</rdfs:comment>
     </owl:Class>
     
 
@@ -34402,8 +34464,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Pommier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : pommier</rdfs:comment>
-        <rdfs:comment>souvent autostérile</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : pommier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">souvent autostérile</rdfs:comment>
     </owl:Class>
     
 
@@ -34413,7 +34475,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Poncirier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rutacée"/>
-        <rdfs:comment>classe pour décrire la plante : Poncirier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Poncirier</rdfs:comment>
     </owl:Class>
     
 
@@ -34423,7 +34485,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Potirons">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cucurbitacée"/>
-        <rdfs:comment>classe pour décrire la plante : potirons</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : potirons</rdfs:comment>
     </owl:Class>
     
 
@@ -34442,7 +34504,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Prunier">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Prunier</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Prunier</rdfs:comment>
     </owl:Class>
     
 
@@ -34452,6 +34514,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Pédialacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Pédialacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34461,8 +34524,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Quinoa">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chenopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : quinoa</rdfs:comment>
-        <rdfs:comment>quand les graines se détachent faire pendre a tête en bas et battre une fois sec</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : quinoa</rdfs:comment>
+        <rdfs:comment xml:lang="fr">quand les graines se détachent faire pendre a tête en bas et battre une fois sec</rdfs:comment>
     </owl:Class>
     
 
@@ -34481,7 +34544,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RadisDHiver">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : radis d hiver</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : radis d hiver</rdfs:comment>
     </owl:Class>
     
 
@@ -34491,7 +34554,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RadisDeTousLesMois">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : radis de tous les mois</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : radis de tous les mois</rdfs:comment>
     </owl:Class>
     
 
@@ -34501,7 +34564,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RadisDÉtéEtDAutomne">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : radis d été et d automne</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : radis d été et d automne</rdfs:comment>
     </owl:Class>
     
 
@@ -34511,7 +34574,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RadisNoir">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : radis noir</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : radis noir</rdfs:comment>
     </owl:Class>
     
 
@@ -34521,7 +34584,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RadisRaves">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : radis raves</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : radis raves</rdfs:comment>
     </owl:Class>
     
 
@@ -34531,7 +34594,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Raifort">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Brassicacée"/>
-        <rdfs:comment>classe pour décrire la plante : Raifort</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Raifort</rdfs:comment>
     </owl:Class>
     
 
@@ -34541,7 +34604,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Raiponce">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Campanulacée"/>
-        <rdfs:comment>classe pour décrire la plante : raiponce</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : raiponce</rdfs:comment>
     </owl:Class>
     
 
@@ -34551,6 +34614,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ramnacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Ramnacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34578,6 +34642,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rhamnacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Rhamnacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34587,8 +34652,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RizSauvage">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : riz sauvage</rdfs:comment>
-        <rdfs:comment>graine doivent rester humides</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : riz sauvage</rdfs:comment>
+        <rdfs:comment xml:lang="fr">graine doivent rester humides</rdfs:comment>
     </owl:Class>
     
 
@@ -34598,8 +34663,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RobinierFauxAcacia">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>Bois imputrescible et très mellifére</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Robinier faux acacia</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Bois imputrescible et très mellifére</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Robinier faux acacia</rdfs:comment>
     </owl:Class>
     
 
@@ -34609,7 +34674,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Romarin">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lamiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Romarin</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Romarin</rdfs:comment>
     </owl:Class>
     
 
@@ -34619,6 +34684,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rosacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Rosacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34628,7 +34694,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RoseauCommun">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : Roseau commun</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Roseau commun</rdfs:comment>
     </owl:Class>
     
 
@@ -34638,6 +34704,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rubiacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Rubiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34647,6 +34714,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Rutacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Rutacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34665,6 +34733,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Salicacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Salicacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34674,7 +34743,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Salsifis">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Astéracée"/>
-        <rdfs:comment>classe pour décrire la plante : salsifis</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : salsifis</rdfs:comment>
     </owl:Class>
     
 
@@ -34684,6 +34753,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Sapindacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Sapindacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34693,8 +34763,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Sarrasin">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Polygonacée"/>
-        <rdfs:comment>classe pour décrire la plante : sarrasin</rdfs:comment>
-        <rdfs:comment>récolte non simultanée</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : sarrasin</rdfs:comment>
+        <rdfs:comment xml:lang="fr">récolte non simultanée</rdfs:comment>
     </owl:Class>
     
 
@@ -34704,7 +34774,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Sauge">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lamiacée"/>
-        <rdfs:comment>classe pour décrire la plante : sauge</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : sauge</rdfs:comment>
     </owl:Class>
     
 
@@ -34714,8 +34784,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Saule">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Salicacée"/>
-        <rdfs:comment>classe pour décrire la plante : saule</rdfs:comment>
-        <rdfs:comment>riche en hormane de bouturage</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : saule</rdfs:comment>
+        <rdfs:comment xml:lang="fr">riche en hormane de bouturage</rdfs:comment>
     </owl:Class>
     
 
@@ -34725,8 +34795,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Schisandra">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Schisandracée"/>
-        <rdfs:comment>Grimpante, germination difficile,dioïque</rdfs:comment>
-        <rdfs:comment>classe pour décrire la plante : Schisandra</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Grimpante, germination difficile,dioïque</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Schisandra</rdfs:comment>
     </owl:Class>
     
 
@@ -34736,6 +34806,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Schisandracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Schisandracée</rdfs:comment>
     </owl:Class>
     
 
@@ -34745,7 +34816,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Scorsonères">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : scorsonères</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : scorsonères</rdfs:comment>
     </owl:Class>
     
 
@@ -34755,7 +34826,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Seigle">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : seigle</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : seigle</rdfs:comment>
     </owl:Class>
     
 
@@ -34792,7 +34863,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Sesame">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Pédialacée"/>
-        <rdfs:comment>classe pour décrire la plante : sesame</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : sesame</rdfs:comment>
     </owl:Class>
     
 
@@ -34802,7 +34873,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ShepherdiaArgenté">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Eleagnacée"/>
-        <rdfs:comment>classe pour décrire la plante : Shepherdia argenté</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Shepherdia argenté</rdfs:comment>
     </owl:Class>
     
 
@@ -34812,6 +34883,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Solanacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Solanacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34821,7 +34893,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Sorgho">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Poacée"/>
-        <rdfs:comment>classe pour décrire la plante : sorgho</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : sorgho</rdfs:comment>
     </owl:Class>
     
 
@@ -34831,7 +34903,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#SouchetComestible">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cypéracée"/>
-        <rdfs:comment>classe pour décrire la plante : souchet comestible</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : souchet comestible</rdfs:comment>
     </owl:Class>
     
 
@@ -34841,7 +34913,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#SureauNoir">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Adoxacée"/>
-        <rdfs:comment>classe pour décrire la plante : Sureau noir</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Sureau noir</rdfs:comment>
     </owl:Class>
     
 
@@ -34860,8 +34932,8 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tanaisie">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : Tanaisie</rdfs:comment>
-        <rdfs:comment>vermifuge,toxique à haute dose</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Tanaisie</rdfs:comment>
+        <rdfs:comment xml:lang="fr">vermifuge,toxique à haute dose</rdfs:comment>
     </owl:Class>
     
 
@@ -34871,7 +34943,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Taro">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aracée"/>
-        <rdfs:comment>classe pour décrire la plante : Taro</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Taro</rdfs:comment>
     </owl:Class>
     
 
@@ -34881,7 +34953,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Thym">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Lamiacée"/>
-        <rdfs:comment>classe pour décrire la plante : thym</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : thym</rdfs:comment>
     </owl:Class>
     
 
@@ -34900,6 +34972,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tiliacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Tiliacée</rdfs:comment>
     </owl:Class>
     
 
@@ -34909,7 +34982,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tilleul">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Tiliacée"/>
-        <rdfs:comment>classe pour décrire la plante : Tilleul</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Tilleul</rdfs:comment>
     </owl:Class>
     
 
@@ -34919,7 +34992,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tomate">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
-        <rdfs:comment>classe pour décrire la plante : tomate</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : tomate</rdfs:comment>
     </owl:Class>
     
 
@@ -34929,7 +35002,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Topinambour">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : topinambour</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : topinambour</rdfs:comment>
     </owl:Class>
     
 
@@ -34939,7 +35012,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tournesol">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : tournesol</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : tournesol</rdfs:comment>
     </owl:Class>
     
 
@@ -34958,6 +35031,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tropaeolaceae">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Tropaeolaceae</rdfs:comment>
     </owl:Class>
     
 
@@ -34982,7 +35056,7 @@
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tétragone">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aizoaceae"/>
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Aizoacée"/>
-        <rdfs:comment>classe pour décrire la plante : tétragone</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : tétragone</rdfs:comment>
     </owl:Class>
     
 
@@ -34992,7 +35066,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ulluco">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Basélacée"/>
-        <rdfs:comment>classe pour décrire la plante : Ulluco</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Ulluco</rdfs:comment>
     </owl:Class>
     
 
@@ -35002,6 +35076,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Ulmacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Ulmacée</rdfs:comment>
     </owl:Class>
     
 
@@ -35011,6 +35086,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#UrticaDioïca">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : UrticaDioïca</rdfs:comment>
     </owl:Class>
     
 
@@ -35034,6 +35110,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Valérianacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Valérianacée</rdfs:comment>
     </owl:Class>
     
 
@@ -35043,7 +35120,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Vigne">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Vitacée"/>
-        <rdfs:comment>classe pour décrire la plante : Vigne</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Vigne</rdfs:comment>
     </owl:Class>
     
 
@@ -35053,6 +35130,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Vitacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Vitacée</rdfs:comment>
     </owl:Class>
     
 
@@ -35080,6 +35158,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Xanthorrhoéacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Xanthorrhoéacée</rdfs:comment>
     </owl:Class>
     
 
@@ -35098,7 +35177,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ÉpinardsHiver">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chénopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : épinards hiver</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : épinards hiver</rdfs:comment>
     </owl:Class>
     
 
@@ -35108,7 +35187,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ÉpinardsÉté">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Chénopodiacée"/>
-        <rdfs:comment>classe pour décrire la plante : épinards été</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : épinards été</rdfs:comment>
     </owl:Class>
     
 
@@ -35127,9 +35206,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Arachide,cacahuète">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : arachide,cacahuète</rdfs:comment>
-        <skos:altLabel>cacahuète</skos:altLabel>
-        <skos:prefLabel>arachide</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : arachide,cacahuète</rdfs:comment>
+        <skos:altLabel xml:lang="fr">cacahuète</skos:altLabel>
+        <skos:prefLabelfr>arachide</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35139,9 +35218,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Bibacier,néflierDuJapon">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Bibacier,néflier du Japon</rdfs:comment>
-        <skos:altLabel>néflier du Japon</skos:altLabel>
-        <skos:prefLabel>Bibacier</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Bibacier,néflier du Japon</rdfs:comment>
+        <skos:altLabel xml:lang="fr">néflier du Japon</skos:altLabel>
+        <skos:prefLabelfr>Bibacier</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35160,9 +35239,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Camerisier/baieDeMai">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Autre"/>
-        <rdfs:comment>classe pour décrire la plante : Camerisier/baie de mai</rdfs:comment>
-        <skos:altLabel>baie de mai</skos:altLabel>
-        <skos:prefLabel>Camerisier</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Camerisier/baie de mai</rdfs:comment>
+        <skos:altLabel xml:lang="fr">baie de mai</skos:altLabel>
+        <skos:prefLabelfr>Camerisier</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35172,9 +35251,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Caraganier/poisDeSibérie">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : caraganier/pois de sibérie</rdfs:comment>
-        <skos:altLabel>pois de sibérie</skos:altLabel>
-        <skos:prefLabel>caraganier</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : caraganier/pois de sibérie</rdfs:comment>
+        <skos:altLabel xml:lang="fr">pois de sibérie</skos:altLabel>
+        <skos:prefLabelfr>caraganier</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35184,9 +35263,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Chayotte,Christophine">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cucurbitacée"/>
-        <rdfs:comment>classe pour décrire la plante : chayotte, christophine</rdfs:comment>
-        <skos:altLabel> christophine</skos:altLabel>
-        <skos:prefLabel>chayotte</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : chayotte, christophine</rdfs:comment>
+        <skos:altLabel xml:lang="fr"> christophine</skos:altLabel>
+        <skos:prefLabelfr>chayotte</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35196,7 +35275,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ChâtaigneD’eauChinoise">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Cyperacée"/>
-        <rdfs:comment>classe pour décrire la plante : châtaigne d’eau chinoise</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : châtaigne d’eau chinoise</rdfs:comment>
     </owl:Class>
     
 
@@ -35215,10 +35294,10 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#GailletOdorant/aspersule">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rubiacée"/>
-        <rdfs:comment>classe pour décrire la plante : Gaillet odorant/aspersule</rdfs:comment>
-        <rdfs:comment>éloigne les mites,parfum de vanille et foin coupé</rdfs:comment>
-        <skos:altLabel>aspersule</skos:altLabel>
-        <skos:prefLabel>Gaillet odorant</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Gaillet odorant/aspersule</rdfs:comment>
+        <rdfs:comment xml:lang="fr">éloigne les mites,parfum de vanille et foin coupé</rdfs:comment>
+        <skos:altLabel xml:lang="fr">aspersule</skos:altLabel>
+        <skos:prefLabelfr>Gaillet odorant</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35228,9 +35307,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Passiflore/fruitDeLaPassion">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Passifloracée"/>
-        <rdfs:comment>classe pour décrire la plante : Passiflore/fruit de la passion</rdfs:comment>
-        <skos:altLabel>fruit de la passion</skos:altLabel>
-        <skos:prefLabel>Passiflore</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Passiflore/fruit de la passion</rdfs:comment>
+        <skos:altLabel xml:lang="fr">fruit de la passion</skos:altLabel>
+        <skos:prefLabelfr>Passiflore</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35240,10 +35319,10 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Plaqueminier,kaki">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Ebenacée"/>
-        <rdfs:comment>classe pour décrire la plante : Plaqueminier,kaki</rdfs:comment>
-        <rdfs:comment>dioïque, la peau du fruit ne se mange pas</rdfs:comment>
-        <skos:altLabel>kaki</skos:altLabel>
-        <skos:prefLabel>Plaqueminier</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Plaqueminier,kaki</rdfs:comment>
+        <rdfs:comment xml:lang="fr">dioïque, la peau du fruit ne se mange pas</rdfs:comment>
+        <skos:altLabel xml:lang="fr">kaki</skos:altLabel>
+        <skos:prefLabelfr>Plaqueminier</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35253,9 +35332,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PoireDeTerre,yacon">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Asteracée"/>
-        <rdfs:comment>classe pour décrire la plante : Poire de terre,yacon</rdfs:comment>
-        <skos:altLabel>yacon</skos:altLabel>
-        <skos:prefLabel>Poire de terre</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Poire de terre,yacon</rdfs:comment>
+        <skos:altLabel xml:lang="fr">yacon</skos:altLabel>
+        <skos:prefLabelfr>Poire de terre</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35265,9 +35344,9 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#RosierRugueux/duJapon">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
-        <rdfs:comment>classe pour décrire la plante : Rosier rugueux/du japon</rdfs:comment>
-        <skos:altLabel>du japon</skos:altLabel>
-        <skos:prefLabel>Rosier rugueux</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Rosier rugueux/du japon</rdfs:comment>
+        <skos:altLabel xml:lang="fr">du japon</skos:altLabel>
+        <skos:prefLabelfr>Rosier rugueux</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35277,10 +35356,10 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Soucis/Calendula">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Astéracée"/>
-        <rdfs:comment>classe pour décrire la plante : soucis/ calendula</rdfs:comment>
-        <rdfs:comment>ou calendula</rdfs:comment>
-        <skos:altLabel> calendula</skos:altLabel>
-        <skos:prefLabel>soucis</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : soucis/ calendula</rdfs:comment>
+        <rdfs:comment xml:lang="fr">ou calendula</rdfs:comment>
+        <skos:altLabel xml:lang="fr"> calendula</skos:altLabel>
+        <skos:prefLabelfr>soucis</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35299,10 +35378,10 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Tamarillo,TomateEnArbre">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
-        <rdfs:comment>classe pour décrire la plante : Tamarillo, tomate en arbre</rdfs:comment>
-        <rdfs:comment>sensible au vent, mise à fruit en 1 an</rdfs:comment>
-        <skos:altLabel> tomate en arbre</skos:altLabel>
-        <skos:prefLabel>Tamarillo</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Tamarillo, tomate en arbre</rdfs:comment>
+        <rdfs:comment xml:lang="fr">sensible au vent, mise à fruit en 1 an</rdfs:comment>
+        <skos:altLabel xml:lang="fr"> tomate en arbre</skos:altLabel>
+        <skos:prefLabelfr>Tamarillo</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35321,10 +35400,10 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#VigneJaponaise,kudzu">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Fabacée"/>
-        <rdfs:comment>classe pour décrire la plante : Vigne japonaise,kudzu</rdfs:comment>
-        <rdfs:comment>grimpante,croissance extêmement rapide, anti gueule de bois</rdfs:comment>
-        <skos:altLabel>kudzu</skos:altLabel>
-        <skos:prefLabel>Vigne japonaise</skos:prefLabel>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Vigne japonaise,kudzu</rdfs:comment>
+        <rdfs:comment xml:lang="fr">grimpante,croissance extêmement rapide, anti gueule de bois</rdfs:comment>
+        <skos:altLabel xml:lang="fr">kudzu</skos:altLabel>
+        <skos:prefLabelfr>Vigne japonaise</skos:prefLabelfr>
     </owl:Class>
     
 
@@ -35334,7 +35413,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#ÉpinardD’eau">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Convolvulaceae"/>
-        <rdfs:comment>classe pour décrire la plante : épinard d’eau</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : épinard d’eau</rdfs:comment>
     </owl:Class>
     
 
@@ -35348,6 +35427,255 @@
      -->
 
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Abricotier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AchilléeMillefeuille"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Agave"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Ail"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AilDesOurs"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AirelleRouge"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Akebia"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Amarante"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Amelanchier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Amélanchier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Anacardier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AralieÀGrappe"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Arbousier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ArbreDePluie"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Argousier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AroniaÀFruitNoirs"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Arroche"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Artichaut"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Asiminier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Asperge"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Aubergines"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AubépineFruitière"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AulneDeCorse"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#AulneGlutineux"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Avoine"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#BaieAux5Saveurs"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Bambou"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Bardane"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#BetteMaritime"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Betteraves"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Ble"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#BleDur"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#BleTendre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Bouleau"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Bourrache"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#BrocoliNineStar"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Camphrier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CanneÀSucre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CapucineTubereuse"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Cardons"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CarottesEte"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CarottesHiver"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CarottesPrintemps"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Caroubier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Cassisier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Ceanothus"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Cerisier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CerisierTomenteux"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Chalef"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChenopodeDeBonHenri"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Cherimolier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChicoréesFriséesEtScaroles"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChicoréesWitloofEndives"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Chou-fleursDHiver"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChouDaubenton"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChouKale"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Choux-fleurs"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChouxBrocolis"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChouxDeBruxelles"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChouxDePrintempsCabus"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChouxDÉtéDAutomneEtDHiverCabusDeMilan"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Chätaigner"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CibouleDeChine"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Citronnier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ClaytoneDeCuba"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ComptonieVoyageuse"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ConcombresCornichons"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Consoude"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Cormier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Cotonnier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CourgeButternut"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Courgettes"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CrambeMaritime"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CressonDeJardin"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CressonDesFontaines"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Cédratier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Céleris-raves"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CélerisÀCouper"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#CélerisÀCôtes"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Epeautre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#EpinardFraise"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Erable"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#FauxIndigo"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Feijoa"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Fenouils"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Fevier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Figuier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Fraisier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Framboise"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Frêne"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Fève"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#FèvesPrintemps"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#FèvesÉté"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GaultheriaShallon"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GaulthérieCouchée"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Genêt"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GingembreSauvage"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GinkoBiloba"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Glycine"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GlycineTubéreuse"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GoumiDuJapon"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GoyaveDuChili"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Grenadier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Groseiller"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#HaricotsNainsÀFiletsMangetout"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#HaricotsÀRamesÀFiletsMangetout"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#HaricotsÀÉcosserRécolteEnGrainsFrais"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#HaricotsÀÉcosserRécolteEnGrainsSecs"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#HostaDeFortune"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Houblon"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#HuîtrePotagère"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Hémérocalle"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Hêtre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#IgnameDeChine"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Jujubier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Kiwi"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Kumquat"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LaituesDAutomne"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LaituesDHiver"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LaituesDePrintemps"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LaituesDÉté"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LaituesÀCouper"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LaituesÀForcer"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Lavande"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Lentille"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LianeDeMadere"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Lin"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#LinDeNouvelleZélande"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Litchi"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Lotus"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Lupin"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Luzerne"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Mahonia"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#MainDeBouddha"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Maïs"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Melons"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Micocoulier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Millet"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Miscanthus"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Monarde"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Moutarde"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#MyrteDesMarais"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Myrteola"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#MyrtilleGéante"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#MâchePerpetuelle"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Mâches"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Mûrier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Nashi"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#NavetsDAutomne"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#NavetsDePrintemps"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Noisetier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#NombrilDeVénus"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Noyer"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OcaDuPérou"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OeilletDInde"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OignonPatate"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OignonsBlancs"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OignonsBlancsÀConfire"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OignonsDeCouleurAutomne"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OignonsDeCouleurPrintemps"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OignonsRocambole"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Olivier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OlivierDeBohème"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Orge"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Orme"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Ortie"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#OseilleEpinard"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Oseilles"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PalmierÀSucre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Panais"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PatateDouce"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PaulowniaImperial"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Persil"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Physalis"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PinDeCorée"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Plantain"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoireDeTerre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoireauPerpetuel"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoireauxDAutomneEtDHiver"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoireauxDÉté"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Poirier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoiréesBlettesBettes"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoisChiche"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoisÀGrainRidéEtMangetout"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoisÀGrainRondEtMangetout"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoisÀGrainRondOuRidéPrécoces"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Poivron"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PommeDeTerre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Pommier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Poncirier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Potirons"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Prunier"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Quinoa"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RadisDHiver"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RadisDeTousLesMois"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RadisDÉtéEtDAutomne"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RadisNoir"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RadisRaves"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Raifort"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Raiponce"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RizSauvage"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RobinierFauxAcacia"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Romarin"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RoseauCommun"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Salsifis"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Sarrasin"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Sauge"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Saule"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Schisandra"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Scorsonères"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Seigle"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Sesame"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ShepherdiaArgenté"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Sorgho"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#SouchetComestible"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#SureauNoir"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Tanaisie"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Taro"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Thym"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Tilleul"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Tomate"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Topinambour"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Tournesol"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Tétragone"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Ulluco"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Vigne"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#null"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ÉpinardsHiver"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ÉpinardsÉté"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Arachide,cacahuète"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Bibacier,néflierDuJapon"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Camerisier/baieDeMai"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Caraganier/poisDeSibérie"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Chayotte,Christophine"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ChâtaigneD’eauChinoise"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#GailletOdorant/aspersule"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Passiflore/fruitDeLaPassion"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Plaqueminier,kaki"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#PoireDeTerre,yacon"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#RosierRugueux/duJapon"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Soucis/Calendula"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#Tamarillo,TomateEnArbre"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#VigneJaponaise,kudzu"/>
+            <rdf:Description rdf:about="http://www.eris.org/melonAethlie#ÉpinardD’eau"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
