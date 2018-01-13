@@ -1,4 +1,4 @@
-package eris.melonAethlie.enums;
+package eris.melonAethlie.parser;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,7 +8,15 @@ import java.util.Set;
 import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
-import eris.melonAethlie.Plant;
+import eris.melonAethlie.enums.BesoinEnSoleil;
+import eris.melonAethlie.enums.BesoinsEnNutriments;
+import eris.melonAethlie.enums.BesoinsEnPH;
+import eris.melonAethlie.enums.CaractereVivace;
+import eris.melonAethlie.enums.Multiplication;
+import eris.melonAethlie.enums.PartieComestible;
+import eris.melonAethlie.enums.TypeDeRacine;
+import eris.melonAethlie.enums.TypeDeSol;
+import eris.melonAethlie.model.Plant;
 
 public enum DivType {
 	

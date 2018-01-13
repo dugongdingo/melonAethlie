@@ -32,8 +32,6 @@ import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import org.semanticweb.owlapi.vocab.OWL2Datatype;
 
-import eris.melonAethlie.Family;
-import eris.melonAethlie.Plant;
 import eris.melonAethlie.enums.Action;
 import eris.melonAethlie.enums.BesoinEnSoleil;
 import eris.melonAethlie.enums.BesoinsEnNutriments;
@@ -44,6 +42,8 @@ import eris.melonAethlie.enums.Multiplication;
 import eris.melonAethlie.enums.PartieComestible;
 import eris.melonAethlie.enums.TypeDeRacine;
 import eris.melonAethlie.enums.TypeDeSol;
+import eris.melonAethlie.model.Family;
+import eris.melonAethlie.model.Plant;
 import eris.melonAethlie.parser.MetaphysikPlantatorParser;
 
 public class ModelGenerator {
@@ -128,6 +128,12 @@ public class ModelGenerator {
 							owlFactory.getOWLAnnotationProperty(SKOS.ALT_LABEL.stringValue()),
 							owlGenusClass.getIRI(),
 							owlFactory.getOWLLiteral(genus.getAltLabel())));
+				}
+				if (genus.getComments()!= null && !genus.getComments().trim().equals("")) {
+					owlManager.addAxiom(owlOntology, owlFactory.getOWLAnnotationAssertionAxiom(
+							owlFactory.getOWLAnnotationProperty(RDFS.COMMENT.stringValue()),
+							owlGenusClass.getIRI(),
+							owlFactory.getOWLLiteral(genus.getComments().trim())));
 				}
 
 				if (genus.getMedicalUses() !=  null && ! genus.getMedicalUses().isEmpty()) {

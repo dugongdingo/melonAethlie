@@ -11,10 +11,9 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
-import eris.melonAethlie.Plant;
 import eris.melonAethlie.enums.Action;
-import eris.melonAethlie.enums.DivType;
 import eris.melonAethlie.enums.Mois;
+import eris.melonAethlie.model.Plant;
 
 public class MetaphysikPlantatorParser {
 	

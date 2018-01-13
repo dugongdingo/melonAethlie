@@ -1,4 +1,4 @@
-package eris.melonAethlie;
+package eris.melonAethlie.model;
 
 import java.util.EnumMap;
 import java.util.List;
