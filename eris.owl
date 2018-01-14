@@ -29598,7 +29598,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Semis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="fr">classe pour décrire la plante : kiwi</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la plante : Actinidiacée</rdfs:comment>
     </owl:Class>
     
 
@@ -29607,6 +29607,66 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Acéracée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aBesoinCommePH"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Neutre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourBesoinEnEnsoleillement"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Moyen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourBesoinEnNutriments"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Moyens"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourCaractèreVivace"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Vivace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourTypeDeRacine"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Tracante"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourTypeDeSol"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Equilibre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourUsageGénéral"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#BoisDeChauffe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourUsageGénéral"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Construction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourUsageGénéral"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#BoisD&apos;oeuvre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#seMultipliePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Semis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">classe pour décrire la famille : Acéracée</rdfs:comment>
     </owl:Class>
     
@@ -29625,6 +29685,30 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Agavacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourBesoinEnEnsoleillement"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Faible"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourCaractèreVivace"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Vivace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourUsageMedical"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Dermatologie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourUsageMedical"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Digestion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">classe pour décrire la famille : Agavacée</rdfs:comment>
     </owl:Class>
     
@@ -29671,7 +29755,44 @@
     <!-- http://www.eris.org/melonAethlie#Aizoaceae -->
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Aizoaceae">
+        <owl:equivalentClass rdf:resource="http://www.eris.org/melonAethlie#Aizoacée"/>
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourBesoinEnEnsoleillement"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Important"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourBonVoisin"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Rosacée"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourBonVoisin"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Solanacée"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourCaractèreVivace"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Annuelle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#estRecoltéEn"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Juin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#estSeméEn"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Mai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">classe pour décrire la famille : Aizoaceae</rdfs:comment>
     </owl:Class>
     
@@ -29699,6 +29820,12 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Amarantacée">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Plante"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.eris.org/melonAethlie#aPourCaractèreVivace"/>
+                <owl:someValuesFrom rdf:resource="http://www.eris.org/melonAethlie#Vivace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">classe pour décrire la famille : Amarantacée</rdfs:comment>
     </owl:Class>
     
@@ -31479,7 +31606,7 @@
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#Kiwi">
         <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Actinidiacée"/>
-        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Actinidiacée</rdfs:comment>
+        <rdfs:comment xml:lang="fr">classe pour décrire la famille : Kiwi</rdfs:comment>
     </owl:Class>
     
 
@@ -32242,7 +32369,7 @@
     <!-- http://www.eris.org/melonAethlie#PartieComestible -->
 
     <owl:Class rdf:about="http://www.eris.org/melonAethlie#PartieComestible">
-        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#ElementPlante"/>
+        <rdfs:subClassOf rdf:resource="http://www.eris.org/melonAethlie#Usage"/>
     </owl:Class>
     
 
